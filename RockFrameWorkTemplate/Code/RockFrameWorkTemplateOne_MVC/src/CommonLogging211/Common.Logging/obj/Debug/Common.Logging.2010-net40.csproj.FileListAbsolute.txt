@@ -20,3 +20,8 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.xml
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.pdb

@@ -21,3 +21,11 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csprojResolveAssemblyReference.cache
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.CodeAnalysisLog.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\bin\Debug\Net40\Newtonsoft.Json.dll.lastcodeanalysissucceeded
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.csprojResolveAssemblyReference.cache
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NewtonsoftJson456\Newtonsoft.Json\obj\Debug\Newtonsoft.Json.pdb

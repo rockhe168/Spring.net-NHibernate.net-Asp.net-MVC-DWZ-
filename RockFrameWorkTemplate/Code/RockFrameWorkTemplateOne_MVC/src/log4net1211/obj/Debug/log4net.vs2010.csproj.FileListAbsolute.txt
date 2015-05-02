@@ -20,3 +20,8 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\bin\net\2.0\debug\log4net.xml
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\log4net1211\obj\Debug\log4net.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\log4net1211\obj\Debug\log4net.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\bin\net\2.0\debug\log4net.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\bin\net\2.0\debug\log4net.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\bin\net\2.0\debug\log4net.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\log4net1211\obj\Debug\log4net.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\log4net1211\obj\Debug\log4net.pdb

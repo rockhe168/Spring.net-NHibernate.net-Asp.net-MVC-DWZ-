@@ -16,3 +16,9 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.2010.csprojResolveAssemblyReference.cache
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.2010.csprojResolveAssemblyReference.cache
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.pdb

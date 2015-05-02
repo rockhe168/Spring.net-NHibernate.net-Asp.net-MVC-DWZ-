@@ -4,141 +4,6 @@
         <name>Common.Logging.Log4Net</name>
     </assembly>
     <members>
-        <member name="T:Common.Logging.Log4Net.NamespaceDoc">
-            <summary>
-            <para>
-            This namespace contains the implementations to plug log4net 1.2.9-1.2.11 into Common.Logging.
-            </para>
-            <para>For an example on how to configure
-            <list type="bullet">
-            <item>Common.Logging to render its output to log4net, see <see cref="T:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter"/>.</item>
-            <item>log4net to render its output to Common.Logging use <see cref="T:Common.Logging.Log4Net.CommonLoggingAppender"/>.</item>
-            </list>
-            </para>
-            </summary>
-        </member>
-        <member name="T:Common.Logging.Log4Net.CommonLoggingAppender">
-            <summary>
-            Routes log events to Common.Logging infrastructure.
-            </summary>
-            <example>
-            To route all events logged using log4net to Common.Logging, you need to configure this appender as shown below:
-            <code>
-            &lt;log4net&gt;
-                &lt;appender name=&quot;CommonLoggingAppender&quot; 
-                          type=&quot;Common.Logging.Log4Net.CommonLoggingAppender, Common.Logging.Log4Net129&quot;&gt;
-                    &lt;layout type=&quot;log4net.Layout.PatternLayout, log4net&quot;&gt;
-                        &lt;param name=&quot;ConversionPattern&quot; value=&quot;%level - %class.%method: %message&quot; /&gt;
-                    &lt;/layout&gt;
-                &lt;/appender&gt;
-            
-                &lt;root&gt;
-                    &lt;level value=&quot;ALL&quot; /&gt;
-                    &lt;appender-ref ref=&quot;CommonLoggingAppender&quot; /&gt;
-                &lt;/root&gt;
-            &lt;/log4net&gt;
-            </code>
-            </example>
-            <author>Erich Eichinger</author>
-        </member>
-        <member name="M:Common.Logging.Log4Net.CommonLoggingAppender.GetClosestLevel(log4net.Core.Level)">
-            <summary>
-            Gets the closest level supported by Common.Logging of the given log4net level
-            </summary>
-        </member>
-        <member name="M:Common.Logging.Log4Net.CommonLoggingAppender.Append(log4net.Core.LoggingEvent)">
-            <summary>
-            Sends the given log event to Common.Logging
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.CommonLoggingAppender.Layout">
-            <summary>
-             Get or set the layout for this appender
-            </summary>
-        </member>
-        <member name="T:Common.Logging.Log4Net.CommonLoggingAppender.ExceptionAwareLayout">
-            <summary>
-            Wrapper class that prevents exceptions from being rendered in the message
-            </summary>
-        </member>
-        <member name="T:Common.Logging.Log4Net.Log4NetLogger">
-            <summary>
-            Concrete implementation of <see cref="T:Common.Logging.ILog"/> interface specific to log4net 1.2.9-1.2.11.
-            </summary>
-            <remarks>
-            Log4net is capable of outputting extended debug information about where the current 
-            message was generated: class name, method name, file, line, etc. Log4net assumes that the location
-            information should be gathered relative to where Debug() was called. 
-            When using Common.Logging, Debug() is called in Common.Logging.Log4Net.Log4NetLogger. This means that
-            the location information will indicate that Common.Logging.Log4Net.Log4NetLogger always made
-            the call to Debug(). We need to know where Common.Logging.ILog.Debug()
-            was called. To do this we need to use the log4net.ILog.Logger.Log method and pass in a Type telling
-            log4net where in the stack to begin looking for location information.
-            </remarks>
-            <author>Gilles Bayon</author>
-            <author>Erich Eichinger</author>
-        </member>
-        <member name="M:Common.Logging.Log4Net.Log4NetLogger.#ctor(log4net.Core.ILoggerWrapper)">
-            <summary>
-            Constructor
-            </summary>
-            <param name="log"></param>
-        </member>
-        <member name="M:Common.Logging.Log4Net.Log4NetLogger.WriteInternal(Common.Logging.LogLevel,System.Object,System.Exception)">
-            <summary>
-            Actually sends the message to the underlying log system.
-            </summary>
-            <param name="logLevel">the level of this log event.</param>
-            <param name="message">the message to log</param>
-            <param name="exception">the exception to log (may be null)</param>
-        </member>
-        <member name="M:Common.Logging.Log4Net.Log4NetLogger.GetLevel(Common.Logging.LogLevel)">
-            <summary>
-            Maps <see cref="T:Common.Logging.LogLevel"/> to log4net's <see cref="T:log4net.Core.Level"/>
-            </summary>
-            <param name="logLevel"></param>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsTraceEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsDebugEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsInfoEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsWarnEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsErrorEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsFatalEnabled">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="T:AssemblyDoc">
-            <summary>
-            <para>This assembly contains the adapter to the log4net 1.2.9-1.2.11 library</para>
-            <para>For an example on how to configure
-            <list type="bullet">
-            <item>Common.Logging to render its output to log4net, see <see cref="T:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter"/>.</item>
-            <item>log4net to render its output to Common.Logging use <see cref="T:Common.Logging.Log4Net.CommonLoggingAppender"/>.</item>
-            </list>
-            </para>
-            </summary>
-        </member>
         <member name="T:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter">
             <summary>
             Concrete subclass of ILoggerFactoryAdapter specific to log4net 1.2.9-1.2.11.
@@ -257,6 +122,141 @@
         </member>
         <member name="M:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter.ILog4NetRuntime.GetLogger(System.String)">
             <summary>Calls <see cref="M:Common.Logging.LogManager.GetLogger(System.String)"/></summary>
+        </member>
+        <member name="T:Common.Logging.Log4Net.Log4NetLogger">
+            <summary>
+            Concrete implementation of <see cref="T:Common.Logging.ILog"/> interface specific to log4net 1.2.9-1.2.11.
+            </summary>
+            <remarks>
+            Log4net is capable of outputting extended debug information about where the current 
+            message was generated: class name, method name, file, line, etc. Log4net assumes that the location
+            information should be gathered relative to where Debug() was called. 
+            When using Common.Logging, Debug() is called in Common.Logging.Log4Net.Log4NetLogger. This means that
+            the location information will indicate that Common.Logging.Log4Net.Log4NetLogger always made
+            the call to Debug(). We need to know where Common.Logging.ILog.Debug()
+            was called. To do this we need to use the log4net.ILog.Logger.Log method and pass in a Type telling
+            log4net where in the stack to begin looking for location information.
+            </remarks>
+            <author>Gilles Bayon</author>
+            <author>Erich Eichinger</author>
+        </member>
+        <member name="M:Common.Logging.Log4Net.Log4NetLogger.#ctor(log4net.Core.ILoggerWrapper)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="M:Common.Logging.Log4Net.Log4NetLogger.WriteInternal(Common.Logging.LogLevel,System.Object,System.Exception)">
+            <summary>
+            Actually sends the message to the underlying log system.
+            </summary>
+            <param name="logLevel">the level of this log event.</param>
+            <param name="message">the message to log</param>
+            <param name="exception">the exception to log (may be null)</param>
+        </member>
+        <member name="M:Common.Logging.Log4Net.Log4NetLogger.GetLevel(Common.Logging.LogLevel)">
+            <summary>
+            Maps <see cref="T:Common.Logging.LogLevel"/> to log4net's <see cref="T:log4net.Core.Level"/>
+            </summary>
+            <param name="logLevel"></param>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsTraceEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsDebugEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsInfoEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsWarnEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsErrorEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.Log4NetLogger.IsFatalEnabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AssemblyDoc">
+            <summary>
+            <para>This assembly contains the adapter to the log4net 1.2.9-1.2.11 library</para>
+            <para>For an example on how to configure
+            <list type="bullet">
+            <item>Common.Logging to render its output to log4net, see <see cref="T:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter"/>.</item>
+            <item>log4net to render its output to Common.Logging use <see cref="T:Common.Logging.Log4Net.CommonLoggingAppender"/>.</item>
+            </list>
+            </para>
+            </summary>
+        </member>
+        <member name="T:Common.Logging.Log4Net.CommonLoggingAppender">
+            <summary>
+            Routes log events to Common.Logging infrastructure.
+            </summary>
+            <example>
+            To route all events logged using log4net to Common.Logging, you need to configure this appender as shown below:
+            <code>
+            &lt;log4net&gt;
+                &lt;appender name=&quot;CommonLoggingAppender&quot; 
+                          type=&quot;Common.Logging.Log4Net.CommonLoggingAppender, Common.Logging.Log4Net129&quot;&gt;
+                    &lt;layout type=&quot;log4net.Layout.PatternLayout, log4net&quot;&gt;
+                        &lt;param name=&quot;ConversionPattern&quot; value=&quot;%level - %class.%method: %message&quot; /&gt;
+                    &lt;/layout&gt;
+                &lt;/appender&gt;
+            
+                &lt;root&gt;
+                    &lt;level value=&quot;ALL&quot; /&gt;
+                    &lt;appender-ref ref=&quot;CommonLoggingAppender&quot; /&gt;
+                &lt;/root&gt;
+            &lt;/log4net&gt;
+            </code>
+            </example>
+            <author>Erich Eichinger</author>
+        </member>
+        <member name="M:Common.Logging.Log4Net.CommonLoggingAppender.GetClosestLevel(log4net.Core.Level)">
+            <summary>
+            Gets the closest level supported by Common.Logging of the given log4net level
+            </summary>
+        </member>
+        <member name="M:Common.Logging.Log4Net.CommonLoggingAppender.Append(log4net.Core.LoggingEvent)">
+            <summary>
+            Sends the given log event to Common.Logging
+            </summary>
+        </member>
+        <member name="P:Common.Logging.Log4Net.CommonLoggingAppender.Layout">
+            <summary>
+             Get or set the layout for this appender
+            </summary>
+        </member>
+        <member name="T:Common.Logging.Log4Net.CommonLoggingAppender.ExceptionAwareLayout">
+            <summary>
+            Wrapper class that prevents exceptions from being rendered in the message
+            </summary>
+        </member>
+        <member name="T:Common.Logging.Log4Net.NamespaceDoc">
+            <summary>
+            <para>
+            This namespace contains the implementations to plug log4net 1.2.9-1.2.11 into Common.Logging.
+            </para>
+            <para>For an example on how to configure
+            <list type="bullet">
+            <item>Common.Logging to render its output to log4net, see <see cref="T:Common.Logging.Log4Net.Log4NetLoggerFactoryAdapter"/>.</item>
+            <item>log4net to render its output to Common.Logging use <see cref="T:Common.Logging.Log4Net.CommonLoggingAppender"/>.</item>
+            </list>
+            </para>
+            </summary>
         </member>
     </members>
 </doc>

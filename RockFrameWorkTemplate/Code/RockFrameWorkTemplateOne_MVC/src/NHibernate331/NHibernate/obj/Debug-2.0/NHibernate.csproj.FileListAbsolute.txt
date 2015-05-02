@@ -32,3 +32,11 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.csprojResolveAssemblyReference.cache
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\bin\Debug-2.0\NHibernate.XML
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\bin\Debug-2.0\NHibernate.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\bin\Debug-2.0\NHibernate.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\bin\Debug-2.0\Iesi.Collections.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\bin\Debug-2.0\Iesi.Collections.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.csprojResolveAssemblyReference.cache
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\obj\Debug-2.0\NHibernate.pdb

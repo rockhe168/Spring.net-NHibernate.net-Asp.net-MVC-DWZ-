@@ -16,3 +16,9 @@ G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWor
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.2010.csprojResolveAssemblyReference.cache
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.dll
 G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Web.Mvc4\Debug\Spring.Web.Mvc4.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Web.Mvc4\Debug\Spring.Web.Mvc4.pdb
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Web.Mvc4\Debug\Spring.Web.Mvc4.xml
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.2010.csprojResolveAssemblyReference.cache
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.dll
+E:\GitHub\Spring.net-NHibernate.net-Asp.net-MVC-DWZ-\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Web.Mvc4\obj\Debug\Spring.Web.Mvc4.pdb
