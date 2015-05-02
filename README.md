@@ -27,3 +27,7 @@
           缺点：所有对象一下全部实例化（采用单列模式）
 
 里面Demo 包含 asp.net，asp.net mvc也有一套
+
+其中
+RockFrameWork --基础框架代码
+RockFrameWorkTemplate --框架实现，简易Demo，其中包含asp.net mvc, asp.net webform 两种实现
