@@ -1,0 +1,5 @@
+H:\Test\FrameWork\FrameWork\RockFramework\obj\Release\ResolveAssemblyReference.cache
+H:\Test\FrameWork\FrameWork\RockFramework\bin\Release\RockFramework.dll
+H:\Test\FrameWork\FrameWork\RockFramework\bin\Release\RockFramework.pdb
+H:\Test\FrameWork\FrameWork\RockFramework\obj\Release\RockFramework.dll
+H:\Test\FrameWork\FrameWork\RockFramework\obj\Release\RockFramework.pdb

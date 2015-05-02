@@ -1,0 +1,13 @@
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\ResolveAssemblyReference.cache
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.pdb
+G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.dll
+G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\bin\Debug-2.0\Iesi.Collections.pdb
+G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.dll
+G:\MyRepository\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\obj\Debug-2.0\Iesi.Collections.pdb

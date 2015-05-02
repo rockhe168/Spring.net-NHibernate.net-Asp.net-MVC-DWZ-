@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="D546EFB7-9F6C-4C11-B2F8-B85FAD135399/d:Data/d:NHibernate/d:Generic/f:HibernateDaoSupport.cs/l:..?..?..?..?Spring.Data.NHibernate?Data?NHibernate?Generic?HibernateDaoSupport.cs" caret="2956" fromTop="32" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:IObjectManagerFactory.cs" caret="0" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:IBusinessRepository.cs" caret="257" fromTop="11" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:IRepository.cs" caret="0" fromTop="0" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/f:DataObjectManagerFactory.cs" caret="261" fromTop="13" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:BaseBusinessRepositoryImpl.cs" caret="404" fromTop="14" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:Config/f:BusinessObjectManagerFactoryConfig.xml" caret="523" fromTop="12" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:SysManager/f:IDepartmentManager.cs" caret="0" fromTop="0" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:SysManager/f:ICompanyManager.cs" caret="0" fromTop="0" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:Impl/d:SysManager/f:UserInfoManager.cs" caret="0" fromTop="0" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:Impl/d:SysManager/f:CompanyManager.cs" caret="0" fromTop="0" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/f:BusinessObjectManagerFactory.cs" caret="782" fromTop="24" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/d:Config/f:SqlConfigManager.cs" caret="655" fromTop="28" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:RockAdoTemplate.cs" caret="1744" fromTop="0" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/d:IDao/d:SysManager/f:ICompanyDao.cs" caret="275" fromTop="15" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/d:NHibernateImpl/d:SysManager/f:CompanyDao.cs" caret="320" fromTop="12" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/d:Impl/d:SysManager/f:DepartmentManager.cs" caret="1969" fromTop="32" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:DWZ/f:HtmlHelper.cs" caret="1704" fromTop="0" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:config/d:sql/d:SysManager/f:DepartmentSql.xml" caret="0" fromTop="0" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:config/d:sql/d:SysManager/f:CompanySql.xml" caret="0" fromTop="0" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:config/d:sql/d:SysManager/f:UserInfoSql.xml" caret="0" fromTop="0" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:UserInfo/f:Index.cshtml" caret="0" fromTop="0" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Index.cshtml" caret="942" fromTop="23" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/f:Web.config" caret="5177" fromTop="28" />
+    <File id="4ED36E6E-55F6-455F-B384-43FDB69B4D36/f:BaseBusinessRepositoryExtend.cs" caret="476" fromTop="18" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:NHibernateRepository.cs" caret="361" fromTop="0" />
+    <File id="3873FAED-EEA5-4519-B615-7E3D306D4EF7/d:Mappings/d:SysManager/f:UserInfo.hbm.xml" caret="1130" fromTop="17" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="1763" fromTop="25" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:MemcachedCache.cs" caret="676" fromTop="26" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="1445" fromTop="20" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Index.cshtml" caret="758" fromTop="18" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:BaseBusinessRepositoryImpl.cs" caret="676" fromTop="24" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/f:DataObjectManagerFactory.cs" caret="757" fromTop="13" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/f:DataObjectManagerFactory.cs" caret="261" fromTop="13" />
+    <File id="55F3AEFD-D611-4474-B12F-98CC49B5E65A/d:NHibernateImpl/d:SysManager/f:CompanyDao.cs" caret="320" fromTop="12" />
+    <File id="3873FAED-EEA5-4519-B615-7E3D306D4EF7/d:Mappings/d:SysManager/f:UserInfo.hbm.xml" caret="1139" fromTop="17" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="999" fromTop="17" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="1786" fromTop="27" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="475" fromTop="15" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="1483" fromTop="23" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="1739" fromTop="33" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/f:ICacheStorage.cs" caret="289" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="107" fromTop="4" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="469" fromTop="16" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="1153" fromTop="26" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="986" fromTop="23" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="3024" fromTop="29" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="3317" fromTop="33" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="648" fromTop="12" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="793" fromTop="16" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="1372" fromTop="27" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="1586" fromTop="32" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="1908" fromTop="32" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="2197" fromTop="30" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="2044" fromTop="20" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="2395" fromTop="22" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="2544" fromTop="26" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="2768" fromTop="26" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:DefaultCacheAdapter.cs" caret="3160" fromTop="83" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Cache/d:Impl/f:MemcachedCache.cs" caret="176" fromTop="9" />
+  </RecentEdits>
+</RecentFiles>

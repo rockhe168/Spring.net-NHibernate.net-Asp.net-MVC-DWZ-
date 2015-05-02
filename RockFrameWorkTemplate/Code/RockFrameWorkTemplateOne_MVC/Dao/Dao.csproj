@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55F3AEFD-D611-4474-B12F-98CC49B5E65A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dao</RootNamespace>
+    <AssemblyName>Dao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataObjectManagerFactory.cs" />
+    <Compile Include="IDao\SysManager\ICompanyDao.cs" />
+    <Compile Include="IDao\SysManager\IDepartmentDao.cs" />
+    <Compile Include="IDao\SysManager\IUserInfoDao.cs" />
+    <Compile Include="NHibernateImpl\SysManager\CompanyDao.cs" />
+    <Compile Include="NHibernateImpl\SysManager\DepartmentDao.cs" />
+    <Compile Include="NHibernateImpl\SysManager\UserInfoDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\RockFrameWork\Code\RockFramework\RockFramework.csproj">
+      <Project>{8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA}</Project>
+      <Name>RockFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{3873FAED-EEA5-4519-B615-7E3D306D4EF7}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Aop\Spring.Aop.2010.csproj">
+      <Project>{3A3A4E65-45A6-4B20-B460-0BEDC302C02C}</Project>
+      <Name>Spring.Aop.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Core\Spring.Core.2010.csproj">
+      <Project>{710961A3-0DF4-49E4-A26E-F5B9C044AC84}</Project>
+      <Name>Spring.Core.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Data.NHibernate33\Spring.Data.NHibernate33.2010.csproj">
+      <Project>{D546EFB7-9F6C-4C11-B2F8-B85FAD135399}</Project>
+      <Name>Spring.Data.NHibernate33.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Data\Spring.Data.2010.csproj">
+      <Project>{AE00E5AB-C39A-436F-86D2-33BFE33E2E40}</Project>
+      <Name>Spring.Data.2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\SysManager_DaoConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config\DataObjectManagerFactoryConfig.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

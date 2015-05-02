@@ -1,0 +1,742 @@
+2012-11-20 15:41:55,783 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-20 15:41:55,798 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 15:41:55,799 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-20 15:41:55,800 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 15:41:55,800 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-20 15:41:55,800 [31] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-20 15:41:55,820 [31] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-20 15:41:56,062 [31] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-20 15:41:56,063 [31] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 15:41:56,065 [31] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-20 15:41:56,066 [31] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-20 15:41:56,066 [31] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 15:41:56,066 [31] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 15:41:56,066 [31] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 15:41:56,067 [31] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-20 15:41:56,069 [31] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 15:41:56,069 [31] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 15:41:56,069 [31] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 15:41:56,069 [31] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 15:41:56,069 [31] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 15:41:56,129 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-20 15:41:56,130 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-20 15:41:56,130 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 15:41:56,130 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-20 15:41:56,175 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-20 15:41:56,175 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-20 15:41:56,175 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-20 15:41:56,175 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-20 15:41:56,215 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-20 15:41:56,215 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-20 15:41:56,215 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 15:41:56,215 [31] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-20 15:41:56,217 [31] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-20 15:41:56,336 [31] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-20 17:06:25,286 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-20 17:06:25,303 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-20 17:06:25,851 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-20 17:06:25,852 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-20 17:06:25,852 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-20 17:06:25,853 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-20 17:06:25,869 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-20 17:06:25,869 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-20 17:06:25,870 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-20 17:06:25,951 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,026 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-20 17:06:26,079 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-20 17:06:26,084 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,085 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-20 17:06:26,092 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-20 17:06:26,093 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,093 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-20 17:06:26,095 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:06:26,095 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:06:26,097 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-20 17:06:26,101 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:06:26,101 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:06:26,104 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:06:26,104 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-20 17:06:26,105 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:06:26,105 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:06:26,105 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:06:26,105 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:06:26,105 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:06:26,122 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,125 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,151 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-20 17:06:26,151 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-20 17:06:26,152 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:06:26,152 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:06:26,153 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:06:26,153 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-20 17:06:26,153 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-20 17:06:26,153 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-20 17:06:26,154 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-20 17:06:26,154 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-20 17:06:26,154 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-20 17:06:26,154 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-20 17:06:26,154 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-20 17:06:26,156 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-20 17:06:26,157 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:06:26,158 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-20 17:06:26,158 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:06:26,159 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-20 17:06:26,159 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-20 17:06:26,173 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-20 17:06:26,431 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-20 17:06:26,432 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:06:26,434 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-20 17:06:26,435 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-20 17:06:26,435 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:06:26,435 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:06:26,435 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:06:26,436 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-20 17:06:26,438 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:06:26,438 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:06:26,438 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:06:26,438 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:06:26,438 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:06:26,491 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-20 17:06:26,491 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-20 17:06:26,491 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:06:26,491 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-20 17:06:26,534 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-20 17:06:26,534 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-20 17:06:26,534 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-20 17:06:26,535 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-20 17:06:26,568 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-20 17:06:26,569 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-20 17:06:26,569 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:06:26,569 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-20 17:06:26,570 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-20 17:06:26,922 [5] ERROR Spring.Context.Support.WebApplicationContext [(null)] - failed creating context 'spring.root', Stacktrace:
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath)
+   在 Spring.Context.Support.WebApplicationContext.GetRootContext()
+   在 Spring.Context.Support.WebSupportModule.Init(HttpApplication app)
+   在 System.Web.HttpApplication.InitModulesCommon()
+   在 System.Web.HttpApplication.InitModules()
+   在 System.Web.HttpApplication.InitInternal(HttpContext context, HttpApplicationState state, MethodInfo[] handlers)
+   在 System.Web.HttpApplicationFactory.GetNormalApplicationInstance(HttpContext context)
+   在 System.Web.HttpApplicationFactory.GetApplicationInstance(HttpContext context)
+   在 System.Web.HttpRuntime.ProcessRequestInternal(HttpWorkerRequest wr)
+   在 System.Web.HttpRuntime.ProcessRequestNoDemand(HttpWorkerRequest wr)
+   在 System.Web.HttpRuntime.ProcessRequest(HttpWorkerRequest wr)
+   在 Microsoft.VisualStudio.WebHost.Request.Process()
+   在 Microsoft.VisualStudio.WebHost.Host.ProcessRequest(Connection conn)
+
+System.Configuration.ConfigurationErrorsException: Error creating context 'spring.root': 未能从程序集“RockFrameworkWebExtend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null”中加载类型“RockFrameworkWebExtend.DWZBasePagerExtend”。 ---> Spring.Core.CannotLoadObjectTypeException: Cannot resolve type [RockFrameworkWebExtend.DWZBasePagerExtend,RockFrameworkWebExtend] for object with name 'DWZBasePagerExtend' defined in assembly [Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null], resource [Web.config.RockFrameWorkObjectConfig.xml] line 9 ---> System.TypeLoadException: 未能从程序集“RockFrameworkWebExtend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null”中加载类型“RockFrameworkWebExtend.DWZBasePagerExtend”。
+   在 System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   在 System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   在 Spring.Core.TypeResolution.TypeResolver.LoadTypeDirectlyFromAssembly(TypeAssemblyHolder typeInfo)
+   在 Spring.Core.TypeResolution.TypeResolver.Resolve(String typeName)
+   在 Spring.Core.TypeResolution.GenericTypeResolver.Resolve(String typeName)
+   在 Spring.Core.TypeResolution.CachedTypeResolver.Resolve(String typeName)
+   在 Spring.Core.TypeResolution.TypeResolutionUtils.ResolveType(String typeName)
+   在 Spring.Objects.Factory.Support.AbstractObjectDefinition.ResolveObjectType()
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Spring.Objects.Factory.Support.AbstractObjectFactory.ResolveObjectType(RootObjectDefinition rod, String objectName)
+   在 Spring.Objects.Factory.Support.DefaultListableObjectFactory.PreInstantiateSingletons()
+   在 Spring.Context.Support.AbstractApplicationContext.Refresh()
+   在 Spring.Context.Support.WebApplicationContext..ctor(WebApplicationContextArgs args)
+   在 Spring.Context.Support.WebApplicationContext..ctor(String name, Boolean caseSensitive, String[] configurationLocations)
+   在 _dynamic_Spring.Context.Support.WebApplicationContext..ctor(Object[] )
+   在 Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments)
+   在 Spring.Context.Support.ContextHandler.RootContextInstantiator.InvokeContextConstructor(ConstructorInfo ctor)
+   在 Spring.Context.Support.ContextHandler.ContextInstantiator.InstantiateContext()
+   在 Spring.Context.Support.ContextHandler.InstantiateContext(IApplicationContext parentContext, Object configContext, String contextName, Type contextType, Boolean caseSensitive, String[] resources)
+   在 Spring.Context.Support.WebContextHandler.InstantiateContext(IApplicationContext parent, Object configContext, String contextName, Type contextType, Boolean caseSensitive, String[] resources)
+   在 Spring.Context.Support.ContextHandler.Create(Object parent, Object configContext, XmlNode section)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Web.HttpContext.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.GetSection(String sectionName)
+   在 System.Web.Configuration.HttpConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String configKey)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 Spring.Util.ConfigurationUtils.GetSection(String sectionName)
+   在 Spring.Context.Support.WebApplicationContext.GetContextInternal(String virtualPath)
+2012-11-20 17:07:57,147 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-20 17:07:57,163 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-20 17:07:57,667 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-20 17:07:57,667 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-20 17:07:57,668 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-20 17:07:57,669 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-20 17:07:57,684 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-20 17:07:57,685 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-20 17:07:57,685 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-20 17:07:57,764 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:57,820 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-20 17:07:57,866 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-20 17:07:57,874 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:57,875 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-20 17:07:57,883 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-20 17:07:57,884 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:57,884 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-20 17:07:57,886 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:07:57,887 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:07:57,889 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-20 17:07:57,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:07:57,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:07:57,895 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:07:57,895 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-20 17:07:57,897 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:07:57,897 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:07:57,897 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:07:57,897 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:07:57,897 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:07:57,913 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:57,917 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:57,937 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-20 17:07:57,937 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-20 17:07:57,938 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:07:57,938 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:07:57,939 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:07:57,939 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-20 17:07:57,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-20 17:07:57,941 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-20 17:07:57,942 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-20 17:07:57,943 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:07:57,944 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-20 17:07:57,944 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:07:57,945 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-20 17:07:57,945 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-20 17:07:57,959 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-20 17:07:58,222 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-20 17:07:58,223 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:07:58,226 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-20 17:07:58,226 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-20 17:07:58,226 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:07:58,226 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:07:58,226 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:07:58,229 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-20 17:07:58,231 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:07:58,231 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:07:58,231 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:07:58,231 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:07:58,231 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:07:58,282 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-20 17:07:58,283 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-20 17:07:58,283 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:07:58,283 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-20 17:07:58,327 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-20 17:07:58,327 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-20 17:07:58,327 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-20 17:07:58,327 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-20 17:07:58,361 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-20 17:07:58,361 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-20 17:07:58,361 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:07:58,361 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-20 17:07:58,363 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-20 17:07:58,472 [5] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-20 17:12:53,600 [10] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-20 17:12:53,614 [10] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-20 17:12:54,168 [10] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-20 17:12:54,169 [10] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-20 17:12:54,169 [10] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-20 17:12:54,170 [10] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-20 17:12:54,187 [10] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-20 17:12:54,187 [10] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-20 17:12:54,188 [10] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-20 17:12:54,267 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,338 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-20 17:12:54,388 [10] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-20 17:12:54,393 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,394 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-20 17:12:54,402 [10] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-20 17:12:54,403 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,403 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-20 17:12:54,405 [10] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:12:54,405 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:12:54,407 [10] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-20 17:12:54,412 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:12:54,413 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:12:54,415 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:12:54,415 [10] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-20 17:12:54,417 [10] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:12:54,417 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:12:54,417 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:12:54,417 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:12:54,417 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:12:54,434 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,438 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,455 [10] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-20 17:12:54,455 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-20 17:12:54,456 [10] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:12:54,456 [10] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:12:54,458 [10] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-20 17:12:54,459 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-20 17:12:54,460 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-20 17:12:54,461 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-20 17:12:54,462 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:12:54,463 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-20 17:12:54,463 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-20 17:12:54,463 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-20 17:12:54,464 [10] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-20 17:12:54,479 [10] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-20 17:12:54,674 [10] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-20 17:12:54,675 [10] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-20 17:12:54,679 [10] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-20 17:12:54,679 [10] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-20 17:12:54,679 [10] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-20 17:12:54,679 [10] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-20 17:12:54,679 [10] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-20 17:12:54,680 [10] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-20 17:12:54,682 [10] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-20 17:12:54,682 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-20 17:12:54,682 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-20 17:12:54,682 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-20 17:12:54,682 [10] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-20 17:12:54,763 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-20 17:12:54,764 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-20 17:12:54,764 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:12:54,764 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-20 17:12:54,809 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-20 17:12:54,809 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-20 17:12:54,809 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-20 17:12:54,809 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-20 17:12:54,844 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-20 17:12:54,844 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-20 17:12:54,844 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-20 17:12:54,844 [10] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-20 17:12:54,846 [10] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-20 17:12:54,951 [10] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-21 12:04:34,390 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-21 12:04:34,461 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-21 12:04:35,201 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-21 12:04:35,202 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-21 12:04:35,202 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-21 12:04:35,203 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-21 12:04:35,219 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-21 12:04:35,220 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-21 12:04:35,221 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-21 12:04:35,349 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:35,411 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-21 12:04:35,478 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-21 12:04:35,483 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:35,483 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-21 12:04:35,539 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-21 12:04:35,540 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:35,540 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-21 12:04:35,542 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 12:04:35,542 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 12:04:35,545 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-21 12:04:35,549 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 12:04:35,549 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 12:04:35,552 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 12:04:35,552 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-21 12:04:35,616 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 12:04:35,616 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 12:04:35,616 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 12:04:35,616 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 12:04:35,616 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 12:04:35,696 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:35,701 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:35,842 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-21 12:04:35,842 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-21 12:04:35,843 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-21 12:04:35,844 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-21 12:04:35,845 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-21 12:04:35,845 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-21 12:04:35,846 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-21 12:04:35,847 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-21 12:04:35,849 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-21 12:04:35,850 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-21 12:04:35,851 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-21 12:04:35,852 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-21 12:04:35,852 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-21 12:04:35,852 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-21 12:04:35,869 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-21 12:04:38,165 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-21 12:04:38,166 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 12:04:38,169 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-21 12:04:38,169 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-21 12:04:38,169 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-21 12:04:38,170 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-21 12:04:38,170 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-21 12:04:38,172 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-21 12:04:38,174 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 12:04:38,174 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 12:04:38,174 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 12:04:38,174 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 12:04:38,174 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 12:04:39,558 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-21 12:04:39,559 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-21 12:04:39,559 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-21 12:04:39,559 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-21 12:04:39,661 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-21 12:04:39,661 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-21 12:04:39,661 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-21 12:04:39,661 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-21 12:04:39,761 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-21 12:04:39,761 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-21 12:04:39,761 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-21 12:04:39,761 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-21 12:04:39,763 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-21 12:04:39,987 [5] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-21 13:55:58,077 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-21 13:55:58,099 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-21 13:55:58,627 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-21 13:55:58,627 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-21 13:55:58,628 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-21 13:55:58,629 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-21 13:55:58,649 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-21 13:55:58,650 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-21 13:55:58,650 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-21 13:55:58,750 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:58,815 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-21 13:55:58,864 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-21 13:55:58,870 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:58,871 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-21 13:55:58,879 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-21 13:55:58,880 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:58,880 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-21 13:55:58,881 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 13:55:58,882 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 13:55:58,884 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-21 13:55:58,888 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 13:55:58,888 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 13:55:58,890 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 13:55:58,890 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-21 13:55:58,892 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 13:55:58,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 13:55:58,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 13:55:58,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 13:55:58,893 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 13:55:58,909 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:58,913 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:58,932 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-21 13:55:58,933 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-21 13:55:58,933 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-21 13:55:58,934 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-21 13:55:58,934 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-21 13:55:58,935 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-21 13:55:58,936 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-21 13:55:58,938 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-21 13:55:58,939 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-21 13:55:58,939 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-21 13:55:58,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-21 13:55:58,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-21 13:55:58,940 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-21 13:55:58,954 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-21 13:55:59,218 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-21 13:55:59,220 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-21 13:55:59,222 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-21 13:55:59,222 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-21 13:55:59,222 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-21 13:55:59,222 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-21 13:55:59,223 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-21 13:55:59,224 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-21 13:55:59,226 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-21 13:55:59,226 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-21 13:55:59,226 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-21 13:55:59,226 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-21 13:55:59,226 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-21 13:55:59,370 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-21 13:55:59,370 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-21 13:55:59,370 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-21 13:55:59,370 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-21 13:55:59,415 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-21 13:55:59,415 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-21 13:55:59,415 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-21 13:55:59,415 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-21 13:55:59,451 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-21 13:55:59,451 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-21 13:55:59,451 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-21 13:55:59,451 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-21 13:55:59,453 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-21 13:55:59,569 [5] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 11:37:11,817 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 11:37:11,872 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-22 11:37:13,039 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-22 11:37:13,040 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-22 11:37:13,041 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-22 11:37:13,042 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-22 11:37:13,056 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-22 11:37:13,057 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-22 11:37:13,058 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-22 11:37:13,159 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,217 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-22 11:37:13,297 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-22 11:37:13,303 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,304 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-22 11:37:13,315 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-22 11:37:13,316 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,316 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-22 11:37:13,318 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:37:13,318 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:37:13,320 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-22 11:37:13,324 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:37:13,324 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:37:13,328 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:37:13,329 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-22 11:37:13,346 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:37:13,346 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:37:13,346 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:37:13,346 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:37:13,346 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:37:13,364 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,367 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,398 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-22 11:37:13,399 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-22 11:37:13,399 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 11:37:13,400 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 11:37:13,400 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 11:37:13,400 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-22 11:37:13,401 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-22 11:37:13,403 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-22 11:37:13,404 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 11:37:13,405 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-22 11:37:13,405 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 11:37:13,406 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-22 11:37:13,406 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-22 11:37:13,422 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-22 11:37:13,932 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-22 11:37:13,933 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:37:13,935 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-22 11:37:13,935 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-22 11:37:13,935 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 11:37:13,935 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 11:37:13,935 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 11:37:13,936 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-22 11:37:13,938 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:37:13,938 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:37:13,938 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:37:13,938 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:37:13,938 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:37:14,946 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-22 11:37:14,946 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-22 11:37:14,946 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 11:37:14,946 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-22 11:37:15,011 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-22 11:37:15,011 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-22 11:37:15,011 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-22 11:37:15,011 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-22 11:37:15,103 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-22 11:37:15,103 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-22 11:37:15,103 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 11:37:15,103 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-22 11:37:15,104 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-22 11:37:15,302 [5] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 11:47:30,887 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 11:47:30,904 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-22 11:47:31,442 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-22 11:47:31,442 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-22 11:47:31,443 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-22 11:47:31,444 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-22 11:47:31,459 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-22 11:47:31,459 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-22 11:47:31,460 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-22 11:47:31,550 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:31,612 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-22 11:47:31,661 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-22 11:47:31,667 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:31,668 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-22 11:47:31,675 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-22 11:47:31,676 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:31,676 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-22 11:47:31,678 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:47:31,678 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:47:31,681 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-22 11:47:31,685 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:47:31,685 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:47:31,688 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:47:31,688 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-22 11:47:31,689 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:47:31,689 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:47:31,689 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:47:31,689 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:47:31,689 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:47:31,707 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:31,711 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:31,731 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-22 11:47:31,731 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-22 11:47:31,732 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 11:47:31,732 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 11:47:31,733 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 11:47:31,733 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-22 11:47:31,733 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-22 11:47:31,733 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-22 11:47:31,734 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-22 11:47:31,734 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-22 11:47:31,734 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-22 11:47:31,734 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-22 11:47:31,734 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-22 11:47:31,735 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-22 11:47:31,736 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 11:47:31,737 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-22 11:47:31,738 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 11:47:31,738 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-22 11:47:31,738 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-22 11:47:31,776 [5] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-22 11:47:31,988 [5] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-22 11:47:31,989 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 11:47:32,000 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-22 11:47:32,000 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-22 11:47:32,000 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 11:47:32,001 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 11:47:32,001 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 11:47:32,002 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-22 11:47:32,004 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 11:47:32,004 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 11:47:32,004 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 11:47:32,004 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 11:47:32,004 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 11:47:32,293 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-22 11:47:32,294 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-22 11:47:32,294 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 11:47:32,294 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-22 11:47:32,334 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-22 11:47:32,334 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-22 11:47:32,334 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-22 11:47:32,334 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-22 11:47:32,368 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-22 11:47:32,368 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-22 11:47:32,368 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 11:47:32,368 [5] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-22 11:47:32,370 [5] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-22 11:47:32,475 [5] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 13:33:45,525 [14] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 13:33:45,539 [14] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-22 13:33:46,097 [14] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-22 13:33:46,097 [14] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-22 13:33:46,098 [14] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-22 13:33:46,099 [14] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-22 13:33:46,116 [14] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-22 13:33:46,116 [14] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-22 13:33:46,117 [14] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-22 13:33:46,202 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,261 [14] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-22 13:33:46,320 [14] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-22 13:33:46,326 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,326 [14] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-22 13:33:46,335 [14] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-22 13:33:46,336 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,337 [14] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-22 13:33:46,339 [14] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 13:33:46,339 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 13:33:46,341 [14] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-22 13:33:46,346 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 13:33:46,346 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 13:33:46,350 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 13:33:46,351 [14] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-22 13:33:46,352 [14] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 13:33:46,352 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 13:33:46,352 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 13:33:46,352 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 13:33:46,352 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 13:33:46,374 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,378 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,399 [14] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-22 13:33:46,400 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-22 13:33:46,401 [14] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 13:33:46,401 [14] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 13:33:46,402 [14] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Transaction factory: NHibernate.Transaction.AdoNetWithDistributedTransactionFactory
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Optimize cache for minimal puts: False
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Connection release mode: auto
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default batch fetch size: 1
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - echoing all SQL to stdout
+2012-11-22 13:33:46,403 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Statistics: disabled
+2012-11-22 13:33:46,404 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Deleted entity synthetic identifier rollback: disabled
+2012-11-22 13:33:46,404 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query translator: NHibernate.Hql.Ast.ANTLR.ASTQueryTranslatorFactory
+2012-11-22 13:33:46,406 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Query language substitutions: {'true'='1', 'false'='0', 'yes'=''Y'', 'no'=''N''}
+2012-11-22 13:33:46,407 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - cache provider: NHibernate.Cache.NoCacheProvider, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 13:33:46,408 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Order SQL inserts for batching: enabled
+2012-11-22 13:33:46,408 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Batcher factory: NHibernate.AdoNet.SqlClientBatchingBatcherFactory, NHibernate, Version=3.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4
+2012-11-22 13:33:46,409 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Default entity-mode: Poco
+2012-11-22 13:33:46,409 [14] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Named query checking : enabled
+2012-11-22 13:33:46,425 [14] INFO  NHibernate.Impl.SessionFactoryImpl [(null)] - building session factory
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Impl.SessionFactoryObjectFactory [(null)] - no name configured
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - Running hbm2ddl schema update
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - fetching database metadata
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds
+2012-11-22 13:33:46,651 [14] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - updating schema
+2012-11-22 13:33:46,667 [14] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 13:33:46,667 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 13:33:46,667 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 13:33:46,667 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 13:33:46,667 [14] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 13:33:46,823 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Company
+2012-11-22 13:33:46,823 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: createtime, updatetime, createuser, companyid, name, isdelete, version, description, updateuser
+2012-11-22 13:33:46,823 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 13:33:46,823 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__company__2d971cac7f60ed59
+2012-11-22 13:33:46,870 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.Department
+2012-11-22 13:33:46,870 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: departmentid, name, company, createtime, updatetime, createuser, isdelete, version, updateuser, code, description
+2012-11-22 13:33:46,870 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: fk_department_company
+2012-11-22 13:33:46,870 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk__departme__b2079bed03317e3d
+2012-11-22 13:33:46,901 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - table found: RockCommonDB.dbo.UserInfo
+2012-11-22 13:33:46,901 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - columns: userid, username, userpassword, useacturlname, rolid, companyid, departmentid, usertel, usermobile, useremail, createtime, updatetime, createuser, updateuser, isdelete, version
+2012-11-22 13:33:46,901 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - foreign keys: 
+2012-11-22 13:33:46,901 [14] INFO  NHibernate.Dialect.Schema.ITableMetadata [(null)] - indexes: pk_userinfo
+2012-11-22 13:33:46,901 [14] INFO  NHibernate.Tool.hbm2ddl.SchemaUpdate [(null)] - schema update complete
+2012-11-22 13:33:47,026 [14] INFO  Spring.Context.Support.WebApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 13:34:32,095 [5] INFO  Spring.Context.Support.XmlApplicationContext [(null)] - ApplicationContext Refresh: Completed
+2012-11-22 13:34:32,110 [5] INFO  Spring.Data.Common.DbProviderFactory [(null)] - 46 DbProviders Available. [SqlServer-1.1,SqlServer-2.0,SqlServer-4.0,SqlServerCe-3.1,SqlServerCe-3.5.1,OleDb-1.1,OleDb-2.0,OleDb-4.0,OracleClient-2.0,OracleODP-2.0,OracleODP-11-2.0,MySql,MySql-1.0.9,MySql-5.0,MySql-5.0.8.1,MySql-5.1,MySql-5.1.4,MySql-5.2.3,MySql-6.1.3,MySql-6.2.2,Npgsql-1.0,Npgsql-2.0-beta1,Npgsql-2.0,DB2-9.0.0-1.1,DB2-9.0.0-2.0,DB2-9.1.0-1.1,DB2-9.1.0.2,iDB2-10.0.0.0,SQLite-1.0.43,SQLite-1.0.44,SQLite-1.0.47,SQLite-1.0.56,SQLite-1.0.65,SQLite-1.0.66,SQLite-1.0.72,Firebird-2.1,SybaseAse-12,SybaseAse-15,SybaseAse-AdoNet2,IfxOdbc,IfxSQLI-3.0.0.2,IfxDRDA-9.0.0.2,Odbc-1.1,Odbc-2.0,Odbc-4.0,Cache-2.0.0.1]
+2012-11-22 13:34:32,610 [5] INFO  NHibernate.Cfg.Environment [(null)] - NHibernate 3.2.0.4000 (3.2.0.4000)
+2012-11-22 13:34:32,610 [5] INFO  NHibernate.Cfg.Environment [(null)] - hibernate-configuration section not found in application configuration file
+2012-11-22 13:34:32,610 [5] INFO  NHibernate.Cfg.Environment [(null)] - Bytecode provider name : lcg
+2012-11-22 13:34:32,610 [5] INFO  NHibernate.Cfg.Environment [(null)] - Using reflection optimizer
+2012-11-22 13:34:32,625 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Setting proxy factory to Spring provided one as user did not specify any
+2012-11-22 13:34:32,625 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Searching for mapped documents in assembly: Domain
+2012-11-22 13:34:32,625 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Company.hbm.xml
+2012-11-22 13:34:32,703 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:34:32,750 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Company -> Company
+2012-11-22 13:34:32,797 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.Department.hbm.xml
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.Department -> Department
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Cfg.Configuration [(null)] - Mapping resource: Domain.Mappings.SysManager.UserInfo.hbm.xml
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - Mapping class: Domain.Entities.SysManager.UserInfo -> UserInfo
+2012-11-22 13:34:32,812 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.XmlHbmBinding.Binder [(null)] - mapping collection: Domain.Entities.SysManager.Company.Departments -> Department
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 13:34:32,828 [5] INFO  Spring.Data.NHibernate.LocalSessionFactoryObject [(null)] - Building new Hibernate SessionFactory
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - checking mappings queue
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-many association mappings
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing one-to-one association property references
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing foreign key constraints
+2012-11-22 13:34:32,828 [5] INFO  NHibernate.Cfg.Configuration [(null)] - processing filters (second pass)
+2012-11-22 13:34:32,844 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:34:32,844 [5] INFO  NHibernate.Dialect.Dialect [(null)] - Using dialect: NHibernate.Dialect.MsSql2008Dialect
+2012-11-22 13:34:32,859 [5] INFO  NHibernate.Exceptions.SQLExceptionConverterFactory [(null)] - Using dialect defined converter
+2012-11-22 13:34:32,875 [5] INFO  NHibernate.Cfg.SettingsFactory [(null)] - Generate SQL with comments: disabled
+2012-11-22 13:34:32,875 [5] INFO  NHibernate.Connection.ConnectionProviderFactory [(null)] - Initializing connection provider: Spring.Data.NHibernate.LocalSessionFactoryObject+DbProviderWrapper, Spring.Data.NHibernate32, Version=1.3.2.40943, Culture=neutral, PublicKeyToken=65e474d141e25e07
+2012-11-22 13:34:32,875 [5] INFO  NHibernate.Connection.ConnectionProvider [(null)] - Configuring ConnectionProvider
+2012-11-22 13:34:32,875 [5] INFO  NHibernate.Driver.DriverBase [(null)] - setting ADO.NET command timeout to 60 seconds

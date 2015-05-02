@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--查询Company 总条数-->
+  <sql>
+    <!--Sql Key-->
+    <Id>Company_SelectTotalCount</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+          
+      ]]>
+    </Text>
+  </sql>
+
+  <!--查询Company 制定页数数据-->
+  <sql>
+    <!--Sql Key-->
+    <Id>Company_SelectGoToPager</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+        
+      ]]>
+    </Text>
+  </sql>
+</configuration> 

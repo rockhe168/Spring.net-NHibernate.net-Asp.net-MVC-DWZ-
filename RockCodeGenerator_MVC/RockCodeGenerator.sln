@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockCodeGenerator", "RockCodeGenerator\RockCodeGenerator.csproj", "{ACDB8118-25B3-4916-A0EC-7D177BE9F2C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{E2B28FA0-7EFB-4199-BE31-EA3A5E98E2F7}"
+	ProjectSection(SolutionItems) = preProject
+		lib\Microsoft.Practices.EnterpriseLibrary.Common.dll = lib\Microsoft.Practices.EnterpriseLibrary.Common.dll
+		lib\Microsoft.Practices.EnterpriseLibrary.Data.dll = lib\Microsoft.Practices.EnterpriseLibrary.Data.dll
+		lib\Microsoft.Practices.ServiceLocation.dll = lib\Microsoft.Practices.ServiceLocation.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDB8118-25B3-4916-A0EC-7D177BE9F2C3}.Debug|x86.ActiveCfg = Debug|x86
+		{ACDB8118-25B3-4916-A0EC-7D177BE9F2C3}.Debug|x86.Build.0 = Debug|x86
+		{ACDB8118-25B3-4916-A0EC-7D177BE9F2C3}.Release|x86.ActiveCfg = Release|x86
+		{ACDB8118-25B3-4916-A0EC-7D177BE9F2C3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

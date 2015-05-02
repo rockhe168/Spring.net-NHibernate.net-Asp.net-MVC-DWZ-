@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net40\Common.Logging.EntLib31\Debug\Common.Logging.EntLib31.dll
+C:\_prj\common-logging\build\net40\Common.Logging.EntLib31\Debug\Common.Logging.EntLib31.pdb
+C:\_prj\common-logging\build\net40\Common.Logging.EntLib31\Debug\Common.Logging.EntLib31.xml
+C:\_prj\common-logging\src\Common.Logging.EntLib31\obj\Debug\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.EntLib31\obj\Debug\Common.Logging.EntLib31.dll
+C:\_prj\common-logging\src\Common.Logging.EntLib31\obj\Debug\Common.Logging.EntLib31.pdb

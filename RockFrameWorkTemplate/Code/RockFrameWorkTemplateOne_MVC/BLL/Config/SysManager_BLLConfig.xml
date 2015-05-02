@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <!--Company-->
+  <object id="BLL.SysManager.CompanyManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="BLL.Impl.SysManager.CompanyManager,BLL">
+        <property name="CurrentDao" ref="Dao.SysManager.CompanyDao"/>
+        <property name="DataObjectFactory" ref="Dao.DataObjectManagerFactory"/>
+        <property name="AdoTemplate" ref="AdoTemplate" />
+      </object>
+    </property>
+  </object>
+
+  <!--Department-->
+  <object id="BLL.SysManager.DepartmentManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="BLL.Impl.SysManager.DepartmentManager,BLL">
+        <property name="CurrentDao" ref="Dao.SysManager.DepartmentDao"/>
+        <property name="DataObjectFactory" ref="Dao.DataObjectManagerFactory"/>
+        <property name="AdoTemplate" ref="AdoTemplate" />
+      </object>
+    </property>
+  </object>
+
+  <!--UserInfo-->
+  <object id="BLL.SysManager.UserInfoManager" parent="BaseTransactionManager">
+    <property name="Target">
+      <object type="BLL.Impl.SysManager.UserInfoManager,BLL">
+        <property name="CurrentDao" ref="Dao.SysManager.UserInfoDao"/>
+        <property name="DataObjectFactory" ref="Dao.DataObjectManagerFactory"/>
+        <property name="AdoTemplate" ref="AdoTemplate" />
+      </object>
+    </property>
+  </object>
+
+  <!--{ProPertyXMLList}-->
+
+
+
+
+</objects>
+

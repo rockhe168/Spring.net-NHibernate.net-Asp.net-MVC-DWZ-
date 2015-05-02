@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net129\Release\Common.Logging.Log4Net129.dll
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net129\Release\Common.Logging.Log4Net129.pdb
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net129\Release\Common.Logging.Log4Net129.xml
+C:\_prj\common-logging\src\Common.Logging.Log4Net129\obj\Release\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.Log4Net129\obj\Release\Common.Logging.Log4Net129.dll
+C:\_prj\common-logging\src\Common.Logging.Log4Net129\obj\Release\Common.Logging.Log4Net129.pdb

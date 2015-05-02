@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net20\Common.Logging.EntLib50\Release\Common.Logging.EntLib50.dll
+C:\_prj\common-logging\build\net20\Common.Logging.EntLib50\Release\Common.Logging.EntLib50.pdb
+C:\_prj\common-logging\build\net20\Common.Logging.EntLib50\Release\Common.Logging.EntLib50.xml
+C:\_prj\common-logging\src\Common.Logging.EntLib50\obj\Release\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.EntLib50\obj\Release\Common.Logging.EntLib50.dll
+C:\_prj\common-logging\src\Common.Logging.EntLib50\obj\Release\Common.Logging.EntLib50.pdb

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  
+<!--Department-->
+  <object id="DepartmentService" name="~/Ajax/SystemManager/DepartmentService.ashx">
+     <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+
+<!--UserInfo-->
+  <object id="UserInfoService" name="~/Ajax/SystemManager/UserInfoService.ashx">
+     <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+
+
+  
+
+</objects>
+

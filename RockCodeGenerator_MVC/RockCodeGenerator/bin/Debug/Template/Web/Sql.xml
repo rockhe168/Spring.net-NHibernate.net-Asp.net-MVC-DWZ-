@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--查询{TableName} 总条数-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>{TableName}_SelectTotalCount</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[select count(a.{PKName}) from {TableName} as a @where]]>
+    </Text>
+  </sql>
+
+  <!--查询{TableName} 制定页数数据-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>{TableName}_SelectGoToPager</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+         select top @pageSize * from
+        (select row_number() over(order by @orderbyStr) as rownumber,
+        {ProPertyList}
+        from {TableName} as a @where ) as temp_table
+        where  rownumber between @pageSize*(@currentPageNo-1)+1 and @pageSize*(@currentPageNo)
+      ]]>
+    </Text>
+  </sql>
+
+  <!--查询{TableName} 导出对应Excel-->
+  <sql>
+    <Id>UserInfo_SelectGoToOutPutExcel</Id>
+    <Text>
+      <![CDATA[
+      select
+      {ProPertyXMLList}
+      from {TableName} as a @where
+      ]]>
+    </Text>
+  </sql>
+</configuration>

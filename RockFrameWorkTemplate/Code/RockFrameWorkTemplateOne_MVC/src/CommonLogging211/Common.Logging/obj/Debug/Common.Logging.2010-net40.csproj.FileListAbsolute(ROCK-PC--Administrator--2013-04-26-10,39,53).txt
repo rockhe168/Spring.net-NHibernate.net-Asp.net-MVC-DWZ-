@@ -1,0 +1,17 @@
+C:\_prj\common-logging\build\net40\Common.Logging\Debug\Common.Logging.dll
+C:\_prj\common-logging\build\net40\Common.Logging\Debug\Common.Logging.pdb
+C:\_prj\common-logging\build\net40\Common.Logging\Debug\Common.Logging.xml
+C:\_prj\common-logging\src\Common.Logging\obj\Debug\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging\obj\Debug\Common.Logging.dll
+C:\_prj\common-logging\src\Common.Logging\obj\Debug\Common.Logging.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.xml
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\build\net40\Common.Logging\Debug\Common.Logging.xml
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\ResolveAssemblyReference.cache
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\obj\Debug\Common.Logging.pdb

@@ -1,0 +1,1242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1A71D6C-2A5D-4576-B384-9C24F5C50B3A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="config\pageIoc\SysManager_PageConfig.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config\serviceIoc\SysManager_ServiceConfig.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="config\sql\SysManager\CompanySql.xml" />
+    <Content Include="config\sql\SysManager\DepartmentSql.xml" />
+    <Content Include="config\sql\SysManager\UserInfoSql.xml" />
+    <Content Include="js\dwzCommon.js" />
+    <Content Include="js\dwz\dwz.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ChangePwd.aspx" />
+    <Content Include="config\dwz\dwz.frag.xml" />
+    <Content Include="config\dwz\Parameters.xml" />
+    <Content Include="config\log4net\Aspects.xml" />
+    <Content Include="config\log4net\Log4Net.xml" />
+    <EmbeddedResource Include="config\SpringNHibernateConfig.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="config\TransactionManagerConfig.xml" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\admin.js" />
+    <Content Include="js\client.js" />
+    <Content Include="js\commonExternal.js" />
+    <Content Include="js\dwz\dwz.accordion.js" />
+    <Content Include="js\dwz\dwz.ajax.js" />
+    <Content Include="js\dwz\dwz.alertMsg.js" />
+    <Content Include="js\dwz\dwz.barDrag.js" />
+    <Content Include="js\dwz\dwz.checkbox.js" />
+    <Content Include="js\dwz\dwz.combox.js" />
+    <Content Include="js\dwz\dwz.contextmenu.js" />
+    <Content Include="js\dwz\dwz.core.js" />
+    <Content Include="js\dwz\dwz.cssTable.js" />
+    <Content Include="js\dwz\dwz.database.js" />
+    <Content Include="js\dwz\dwz.datepicker.js" />
+    <Content Include="js\dwz\dwz.dialog.js" />
+    <Content Include="js\dwz\dwz.dialogDrag.js" />
+    <Content Include="js\dwz\dwz.drag.js" />
+    <Content Include="js\dwz\dwz.effects.js" />
+    <Content Include="js\dwz\dwz.history.js" />
+    <Content Include="js\dwz\dwz.navTab.js" />
+    <Content Include="js\dwz\dwz.pagination.js" />
+    <Content Include="js\dwz\dwz.panel.js" />
+    <Content Include="js\dwz\dwz.print.js" />
+    <Content Include="js\dwz\dwz.regional.zh.js" />
+    <Content Include="js\dwz\dwz.resize.js" />
+    <Content Include="js\dwz\dwz.scrollCenter.js" />
+    <Content Include="js\dwz\dwz.sortDrag.js" />
+    <Content Include="js\dwz\dwz.stable.js" />
+    <Content Include="js\dwz\dwz.switchEnv.js" />
+    <Content Include="js\dwz\dwz.tab.js" />
+    <Content Include="js\dwz\dwz.taskBar.js" />
+    <Content Include="js\dwz\dwz.theme.js" />
+    <Content Include="js\dwz\dwz.tree.js" />
+    <Content Include="js\dwz\dwz.ui.js" />
+    <Content Include="js\dwz\dwz.util.date.js" />
+    <Content Include="js\dwz\dwz.validate.method.js" />
+    <Content Include="js\IntegralManager\IntegralHistory.js" />
+    <Content Include="js\jquery-1.7.1.js" />
+    <Content Include="js\jquery.bgiframe.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\speedup.js" />
+    <Content Include="Programs\SysManager\CompanyAdd.aspx" />
+    <Content Include="Programs\SysManager\CompanyEdit.aspx" />
+    <Content Include="Programs\SysManager\CompanyList.aspx" />
+    <Content Include="Programs\SysManager\DepartmentAdd.aspx" />
+    <Content Include="Programs\SysManager\DepartmentEdit.aspx" />
+    <Content Include="Programs\SysManager\DepartmentList.aspx" />
+    <Content Include="Programs\SysManager\UserInfoAdd.aspx" />
+    <Content Include="Programs\SysManager\UserInfoEdit.aspx" />
+    <Content Include="Programs\SysManager\UserInfoList.aspx" />
+    <Content Include="Programs\Tool\VerifyCode.aspx" />
+    <Content Include="themes\azure\images\accordion\accordion.png" />
+    <Content Include="themes\azure\images\account_info_bg.png" />
+    <Content Include="themes\azure\images\alert\alertpanel.png" />
+    <Content Include="themes\azure\images\alert\alertpanel_icon.png" />
+    <Content Include="themes\azure\images\button\button_s.png" />
+    <Content Include="themes\azure\images\button\imgX.gif" />
+    <Content Include="themes\azure\images\button\imgX.png" />
+    <Content Include="themes\azure\images\dialog\dialogpanel.png" />
+    <Content Include="themes\azure\images\dialog\dialogpanel_icon.png" />
+    <Content Include="themes\azure\images\form\input_bg.png" />
+    <Content Include="themes\azure\images\form\input_bt.png" />
+    <Content Include="themes\azure\images\grid\grid.png" />
+    <Content Include="themes\azure\images\grid\resizeCol.png" />
+    <Content Include="themes\azure\images\grid\tableth.png" />
+    <Content Include="themes\azure\images\header_bg.png" />
+    <Content Include="themes\azure\images\icon.png" />
+    <Content Include="themes\azure\images\layout\taskbar.png" />
+    <Content Include="themes\azure\images\layout\taskbar_control.png" />
+    <Content Include="themes\azure\images\layout\taskbar_icon.png" />
+    <Content Include="themes\azure\images\layout\toggleSidebar.png" />
+    <Content Include="themes\azure\images\listLine.png" />
+    <Content Include="themes\azure\images\menu\menu.png" />
+    <Content Include="themes\azure\images\order_down.gif" />
+    <Content Include="themes\azure\images\order_up.gif" />
+    <Content Include="themes\azure\images\pageHeader_bg.png" />
+    <Content Include="themes\azure\images\panel\panel.png" />
+    <Content Include="themes\azure\images\panel\panel_icon.png" />
+    <Content Include="themes\azure\images\preview.png" />
+    <Content Include="themes\azure\images\progressBar\progressBar_l.gif" />
+    <Content Include="themes\azure\images\progressBar\progressBar_m.gif" />
+    <Content Include="themes\azure\images\progressBar\progressBar_s.gif" />
+    <Content Include="themes\azure\images\search-bg.gif" />
+    <Content Include="themes\azure\images\search-bt.gif" />
+    <Content Include="themes\azure\images\shadow\shadow_c_c.png" />
+    <Content Include="themes\azure\images\shadow\shadow_c_l.png" />
+    <Content Include="themes\azure\images\shadow\shadow_c_r.png" />
+    <Content Include="themes\azure\images\shadow\shadow_f_c.png" />
+    <Content Include="themes\azure\images\shadow\shadow_f_l.png" />
+    <Content Include="themes\azure\images\shadow\shadow_f_r.png" />
+    <Content Include="themes\azure\images\shadow\shadow_h_c.png" />
+    <Content Include="themes\azure\images\shadow\shadow_h_l.png" />
+    <Content Include="themes\azure\images\shadow\shadow_h_r.png" />
+    <Content Include="themes\azure\images\tabs\tabscontrol.png" />
+    <Content Include="themes\azure\images\tabs\tabspage.png" />
+    <Content Include="themes\azure\images\tabs\tabspage_icon.png" />
+    <Content Include="themes\azure\images\tabs\tabspanel.png" />
+    <Content Include="themes\azure\images\tree\check.png" />
+    <Content Include="themes\azure\images\tree\folder.png" />
+    <Content Include="themes\azure\images\tree\tree.png" />
+    <Content Include="themes\azure\style.css" />
+    <Content Include="themes\css\core.css" />
+    <Content Include="themes\css\ieHack.css" />
+    <Content Include="themes\css\login.css" />
+    <Content Include="themes\css\print.css" />
+    <Content Include="themes\default\images\accordion\accordion.png" />
+    <Content Include="themes\default\images\account_info_bg.png" />
+    <Content Include="themes\default\images\alert\alertpanel.png" />
+    <Content Include="themes\default\images\alert\alertpanel_icon.png" />
+    <Content Include="themes\default\images\button\button_s.png" />
+    <Content Include="themes\default\images\button\imgX.gif" />
+    <Content Include="themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="themes\default\images\dialog\dialogpanel.png" />
+    <Content Include="themes\default\images\dialog\dialogpanel_icon.png" />
+    <Content Include="themes\default\images\form\input_bg.png" />
+    <Content Include="themes\default\images\form\input_bt.png" />
+    <Content Include="themes\default\images\grid\grid.png" />
+    <Content Include="themes\default\images\grid\resizeCol.png" />
+    <Content Include="themes\default\images\grid\tableth.png" />
+    <Content Include="themes\default\images\header_bg.png" />
+    <Content Include="themes\default\images\icon.png" />
+    <Content Include="themes\default\images\layout\taskbar.png" />
+    <Content Include="themes\default\images\layout\taskbar_control.png" />
+    <Content Include="themes\default\images\layout\taskbar_icon.png" />
+    <Content Include="themes\default\images\layout\toggleSidebar.png" />
+    <Content Include="themes\default\images\listLine.png" />
+    <Content Include="themes\default\images\login_banner.jpg" />
+    <Content Include="themes\default\images\login_bg.png" />
+    <Content Include="themes\default\images\login_content_bg.png" />
+    <Content Include="themes\default\images\login_header_bg.png" />
+    <Content Include="themes\default\images\login_list.png" />
+    <Content Include="themes\default\images\login_logo.gif" />
+    <Content Include="themes\default\images\login_sub.png" />
+    <Content Include="themes\default\images\login_title.png" />
+    <Content Include="themes\default\images\logo.png" />
+    <Content Include="themes\default\images\menu\menu.png" />
+    <Content Include="themes\default\images\order_down.gif" />
+    <Content Include="themes\default\images\order_up.gif" />
+    <Content Include="themes\default\images\pageHeader_bg.png" />
+    <Content Include="themes\default\images\panel\panel.png" />
+    <Content Include="themes\default\images\panel\panel_icon.png" />
+    <Content Include="themes\default\images\progressBar\progressBar_l.gif" />
+    <Content Include="themes\default\images\progressBar\progressBar_m.gif" />
+    <Content Include="themes\default\images\progressBar\progressBar_s.gif" />
+    <Content Include="themes\default\images\search-bg.gif" />
+    <Content Include="themes\default\images\search-bt.gif" />
+    <Content Include="themes\default\images\shadow\shadow_c_c.png" />
+    <Content Include="themes\default\images\shadow\shadow_c_l.png" />
+    <Content Include="themes\default\images\shadow\shadow_c_r.png" />
+    <Content Include="themes\default\images\shadow\shadow_f_c.png" />
+    <Content Include="themes\default\images\shadow\shadow_f_l.png" />
+    <Content Include="themes\default\images\shadow\shadow_f_r.png" />
+    <Content Include="themes\default\images\shadow\shadow_h_c.png" />
+    <Content Include="themes\default\images\shadow\shadow_h_l.png" />
+    <Content Include="themes\default\images\shadow\shadow_h_r.png" />
+    <Content Include="themes\default\images\tabs\tabscontrol.png" />
+    <Content Include="themes\default\images\tabs\tabspage.png" />
+    <Content Include="themes\default\images\tabs\tabspage_icon.png" />
+    <Content Include="themes\default\images\tabs\tabspanel.png" />
+    <Content Include="themes\default\images\themeButton.png" />
+    <Content Include="themes\default\images\tree\check.png" />
+    <Content Include="themes\default\images\tree\folder.png" />
+    <Content Include="themes\default\images\tree\tree.png" />
+    <Content Include="themes\default\style.css" />
+    <Content Include="themes\green\images\accordion\accordion.png" />
+    <Content Include="themes\green\images\account_info_bg.png" />
+    <Content Include="themes\green\images\alert\alertpanel.png" />
+    <Content Include="themes\green\images\alert\alertpanel_icon.png" />
+    <Content Include="themes\green\images\button\button_s.png" />
+    <Content Include="themes\green\images\dialog\dialogpanel.png" />
+    <Content Include="themes\green\images\dialog\dialogpanel_icon.png" />
+    <Content Include="themes\green\images\form\input_bg.png" />
+    <Content Include="themes\green\images\form\input_bt.png" />
+    <Content Include="themes\green\images\grid\grid.png" />
+    <Content Include="themes\green\images\grid\resizeCol.png" />
+    <Content Include="themes\green\images\grid\tableth.png" />
+    <Content Include="themes\green\images\header_bg.png" />
+    <Content Include="themes\green\images\layout\toggleSidebar.png" />
+    <Content Include="themes\green\images\listLine.png" />
+    <Content Include="themes\green\images\pageHeader_bg.png" />
+    <Content Include="themes\green\images\panel\panel.png" />
+    <Content Include="themes\green\images\panel\panel_icon.png" />
+    <Content Include="themes\green\images\tabs\tabscontrol.png" />
+    <Content Include="themes\green\images\tabs\tabspage.png" />
+    <Content Include="themes\green\images\tabs\tabspage_icon.png" />
+    <Content Include="themes\green\images\tabs\tabspanel.png" />
+    <Content Include="themes\green\images\tree\tree.png" />
+    <Content Include="themes\green\style.css" />
+    <Content Include="themes\purple\images\accordion\accordion.png" />
+    <Content Include="themes\purple\images\account_info_bg.png" />
+    <Content Include="themes\purple\images\alert\alertpanel.png" />
+    <Content Include="themes\purple\images\alert\alertpanel_icon.png" />
+    <Content Include="themes\purple\images\button\button_s.png" />
+    <Content Include="themes\purple\images\dialog\dialogpanel.png" />
+    <Content Include="themes\purple\images\dialog\dialogpanel_icon.png" />
+    <Content Include="themes\purple\images\form\input_bg.png" />
+    <Content Include="themes\purple\images\form\input_bt.png" />
+    <Content Include="themes\purple\images\grid\grid.png" />
+    <Content Include="themes\purple\images\grid\resizeCol.png" />
+    <Content Include="themes\purple\images\grid\tableth.png" />
+    <Content Include="themes\purple\images\header_bg.png" />
+    <Content Include="themes\purple\images\layout\taskbar.png" />
+    <Content Include="themes\purple\images\layout\taskbar_control.png" />
+    <Content Include="themes\purple\images\layout\taskbar_icon.png" />
+    <Content Include="themes\purple\images\layout\toggleSidebar.png" />
+    <Content Include="themes\purple\images\login_bg.png" />
+    <Content Include="themes\purple\images\login_content_bg.png" />
+    <Content Include="themes\purple\images\login_header_bg.png" />
+    <Content Include="themes\purple\images\login_list.png" />
+    <Content Include="themes\purple\images\menu\menu.png" />
+    <Content Include="themes\purple\images\pageHeader_bg.png" />
+    <Content Include="themes\purple\images\panel\panel.png" />
+    <Content Include="themes\purple\images\panel\panel_icon.png" />
+    <Content Include="themes\purple\images\progressBar\progressBar_l.gif" />
+    <Content Include="themes\purple\images\progressBar\progressBar_m.gif" />
+    <Content Include="themes\purple\images\progressBar\progressBar_s.gif" />
+    <Content Include="themes\purple\images\shadow\shadow_c_c.png" />
+    <Content Include="themes\purple\images\shadow\shadow_c_l.png" />
+    <Content Include="themes\purple\images\shadow\shadow_c_r.png" />
+    <Content Include="themes\purple\images\shadow\shadow_f_c.png" />
+    <Content Include="themes\purple\images\shadow\shadow_f_l.png" />
+    <Content Include="themes\purple\images\shadow\shadow_f_r.png" />
+    <Content Include="themes\purple\images\shadow\shadow_h_c.png" />
+    <Content Include="themes\purple\images\shadow\shadow_h_l.png" />
+    <Content Include="themes\purple\images\shadow\shadow_h_r.png" />
+    <Content Include="themes\purple\images\tabs\tabscontrol.png" />
+    <Content Include="themes\purple\images\tabs\tabspage.png" />
+    <Content Include="themes\purple\images\tabs\tabspage_icon.png" />
+    <Content Include="themes\purple\images\tabs\tabspanel.png" />
+    <Content Include="themes\purple\images\tree\check.png" />
+    <Content Include="themes\purple\images\tree\folder.png" />
+    <Content Include="themes\purple\images\tree\tree.png" />
+    <Content Include="themes\purple\style.css" />
+    <Content Include="themes\silver\images\accordion\accordion.png" />
+    <Content Include="themes\silver\images\account_info_bg.png" />
+    <Content Include="themes\silver\images\alert\alertpanel.png" />
+    <Content Include="themes\silver\images\alert\alertpanel_icon.png" />
+    <Content Include="themes\silver\images\button\button_s.png" />
+    <Content Include="themes\silver\images\dialog\dialogpanel.png" />
+    <Content Include="themes\silver\images\dialog\dialogpanel_icon.png" />
+    <Content Include="themes\silver\images\form\input_bg.png" />
+    <Content Include="themes\silver\images\form\input_bt.png" />
+    <Content Include="themes\silver\images\grid\grid.png" />
+    <Content Include="themes\silver\images\grid\resizeCol.png" />
+    <Content Include="themes\silver\images\grid\tableth.png" />
+    <Content Include="themes\silver\images\header_bg.png" />
+    <Content Include="themes\silver\images\layout\taskbar.png" />
+    <Content Include="themes\silver\images\layout\taskbar_control.png" />
+    <Content Include="themes\silver\images\layout\taskbar_icon.png" />
+    <Content Include="themes\silver\images\layout\toggleSidebar.png" />
+    <Content Include="themes\silver\images\listLine.png" />
+    <Content Include="themes\silver\images\menu\menu.png" />
+    <Content Include="themes\silver\images\pageHeader_bg.png" />
+    <Content Include="themes\silver\images\panel\panel.png" />
+    <Content Include="themes\silver\images\panel\panel_icon.png" />
+    <Content Include="themes\silver\images\progressBar\progressBar_l.gif" />
+    <Content Include="themes\silver\images\progressBar\progressBar_m.gif" />
+    <Content Include="themes\silver\images\progressBar\progressBar_s.gif" />
+    <Content Include="themes\silver\images\shadow\shadow_c_c.png" />
+    <Content Include="themes\silver\images\shadow\shadow_c_l.png" />
+    <Content Include="themes\silver\images\shadow\shadow_c_r.png" />
+    <Content Include="themes\silver\images\shadow\shadow_f_c.png" />
+    <Content Include="themes\silver\images\shadow\shadow_f_l.png" />
+    <Content Include="themes\silver\images\shadow\shadow_f_r.png" />
+    <Content Include="themes\silver\images\shadow\shadow_h_c.png" />
+    <Content Include="themes\silver\images\shadow\shadow_h_l.png" />
+    <Content Include="themes\silver\images\shadow\shadow_h_r.png" />
+    <Content Include="themes\silver\images\tabs\tabscontrol.png" />
+    <Content Include="themes\silver\images\tabs\tabspage.png" />
+    <Content Include="themes\silver\images\tabs\tabspage_icon.png" />
+    <Content Include="themes\silver\images\tabs\tabspanel.png" />
+    <Content Include="themes\silver\images\tree\check.png" />
+    <Content Include="themes\silver\images\tree\folder.png" />
+    <Content Include="themes\silver\images\tree\tree.png" />
+    <Content Include="themes\silver\style.css" />
+    <Content Include="uploadify\cancel.png" />
+    <Content Include="uploadify\css\uploadify.css" />
+    <Content Include="uploadify\scripts\expressInstall.swf" />
+    <Content Include="uploadify\scripts\jquery.uploadify.v2.1.0.js" />
+    <Content Include="uploadify\scripts\swfobject.js" />
+    <Content Include="uploadify\scripts\uploadify.swf" />
+    <Content Include="xheditor\xheditor-1.1.12-en.min.js" />
+    <Content Include="xheditor\xheditor-1.1.12-zh-cn.min.js" />
+    <Content Include="xheditor\xheditor-1.1.12-zh-tw.min.js" />
+    <Content Include="xheditor\xheditor_emot\default\angry.gif" />
+    <Content Include="xheditor\xheditor_emot\default\awkward.gif" />
+    <Content Include="xheditor\xheditor_emot\default\bye.gif" />
+    <Content Include="xheditor\xheditor_emot\default\config.txt" />
+    <Content Include="xheditor\xheditor_emot\default\crazy.gif" />
+    <Content Include="xheditor\xheditor_emot\default\cry.gif" />
+    <Content Include="xheditor\xheditor_emot\default\curse.gif" />
+    <Content Include="xheditor\xheditor_emot\default\cute.gif" />
+    <Content Include="xheditor\xheditor_emot\default\despise.gif" />
+    <Content Include="xheditor\xheditor_emot\default\doubt.gif" />
+    <Content Include="xheditor\xheditor_emot\default\envy.gif" />
+    <Content Include="xheditor\xheditor_emot\default\fastcry.gif" />
+    <Content Include="xheditor\xheditor_emot\default\knock.gif" />
+    <Content Include="xheditor\xheditor_emot\default\laugh.gif" />
+    <Content Include="xheditor\xheditor_emot\default\mad.gif" />
+    <Content Include="xheditor\xheditor_emot\default\ohmy.gif" />
+    <Content Include="xheditor\xheditor_emot\default\panic.gif" />
+    <Content Include="xheditor\xheditor_emot\default\proud.gif" />
+    <Content Include="xheditor\xheditor_emot\default\quiet.gif" />
+    <Content Include="xheditor\xheditor_emot\default\sad.gif" />
+    <Content Include="xheditor\xheditor_emot\default\shutup.gif" />
+    <Content Include="xheditor\xheditor_emot\default\shy.gif" />
+    <Content Include="xheditor\xheditor_emot\default\sleep.gif" />
+    <Content Include="xheditor\xheditor_emot\default\smile.gif" />
+    <Content Include="xheditor\xheditor_emot\default\struggle.gif" />
+    <Content Include="xheditor\xheditor_emot\default\titter.gif" />
+    <Content Include="xheditor\xheditor_emot\default\tongue.gif" />
+    <Content Include="xheditor\xheditor_emot\default\wail.gif" />
+    <Content Include="xheditor\xheditor_emot\default\wronged.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\alien.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\angel.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\angry.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\bandit.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\biglaugh.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\blink.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\blush.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\config.txt" />
+    <Content Include="xheditor\xheditor_emot\ipb\cool.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\cry.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\depres.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\devil.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\glare.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\heart.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\joyful.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\kiss.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\laugh.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\magician.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\ninja.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\pinch.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\police.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\sad.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\sick.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\sideways.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\sleep.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\smile.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\surprised.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\tongue.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\unsure.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\w00t.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\whistling.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\wondering.gif" />
+    <Content Include="xheditor\xheditor_emot\ipb\wub.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\1.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\10.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\11.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\12.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\13.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\14.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\15.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\16.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\17.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\18.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\19.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\2.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\20.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\21.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\22.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\23.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\24.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\25.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\26.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\27.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\28.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\29.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\3.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\30.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\31.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\32.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\33.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\34.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\35.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\36.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\37.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\38.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\39.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\4.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\40.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\5.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\6.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\7.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\8.gif" />
+    <Content Include="xheditor\xheditor_emot\msn\9.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\angry.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\bad.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\blush.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\brokenheart.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\bye.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\coffee.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\config.txt" />
+    <Content Include="xheditor\xheditor_emot\pidgin\cool.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\cry.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\curse.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\cute.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\devil.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\envy.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\gift.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\good.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\kiss.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\laugh.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\love.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\music.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\question.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\rose.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\sad.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\shocked.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\shout.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\sick.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\sleepy.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\smile.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\soccer.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\sweat.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\tired.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\tongue.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\victory.gif" />
+    <Content Include="xheditor\xheditor_emot\pidgin\wink.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\add.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\bg1.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\bg2.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\btnbg.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\btnbgr.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\clear.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\img\start.gif" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\multiupload.css" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\multiupload.html" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\multiupload.js" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\swfupload\swfupload.js" />
+    <Content Include="xheditor\xheditor_plugins\multiupload\swfupload\swfupload.swf" />
+    <Content Include="xheditor\xheditor_plugins\ubb.min.js" />
+    <Content Include="xheditor\xheditor_skin\default\iframe.css" />
+    <Content Include="xheditor\xheditor_skin\default\img\anchor.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\close.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\flash.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\icons.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\loading.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\progress.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-address.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-div.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h1.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h2.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h3.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h4.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h5.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-h6.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-p.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\tag-pre.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\waiting.gif" />
+    <Content Include="xheditor\xheditor_skin\default\img\wmp.gif" />
+    <Content Include="xheditor\xheditor_skin\default\ui.css" />
+    <Content Include="xheditor\xheditor_skin\nostyle\iframe.css" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\anchor.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\close.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\flash.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\icons.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\loading.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\progress.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-address.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-div.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h1.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h2.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h3.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h4.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h5.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-h6.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-p.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\tag-pre.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\waiting.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\img\wmp.gif" />
+    <Content Include="xheditor\xheditor_skin\nostyle\ui.css" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\iframe.css" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\anchor.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\buttonbg.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\close.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\flash.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\icons.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\loading.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\progress.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-address.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-div.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h1.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h2.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h3.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h4.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h5.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-h6.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-p.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\tag-pre.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\waiting.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\img\wmp.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007blue\ui.css" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\iframe.css" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\anchor.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\buttonbg.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\close.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\flash.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\icons.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\loading.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\progress.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-address.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-div.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h1.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h2.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h3.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h4.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h5.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-h6.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-p.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\tag-pre.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\waiting.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\img\wmp.gif" />
+    <Content Include="xheditor\xheditor_skin\o2007silver\ui.css" />
+    <Content Include="xheditor\xheditor_skin\vista\iframe.css" />
+    <Content Include="xheditor\xheditor_skin\vista\img\anchor.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\buttonbg.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\close.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\flash.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\icons.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\loading.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\progress.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\progressbg.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-address.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-div.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h1.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h2.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h3.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h4.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h5.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-h6.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-p.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\tag-pre.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\titlebg.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\waiting.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\img\wmp.gif" />
+    <Content Include="xheditor\xheditor_skin\vista\ui.css" />
+    <Content Include="js\common.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajax\SysManager\CompanyService.ashx.cs">
+      <DependentUpon>CompanyService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\SysManager\DepartmentService.ashx.cs">
+      <DependentUpon>DepartmentService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\SysManager\UserInfoService.ashx.cs">
+      <DependentUpon>UserInfoService.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.designer.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyAdd.aspx.cs">
+      <DependentUpon>CompanyAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyAdd.aspx.designer.cs">
+      <DependentUpon>CompanyAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyEdit.aspx.cs">
+      <DependentUpon>CompanyEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyEdit.aspx.designer.cs">
+      <DependentUpon>CompanyEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyList.aspx.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\CompanyList.aspx.designer.cs">
+      <DependentUpon>CompanyList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentAdd.aspx.cs">
+      <DependentUpon>DepartmentAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentAdd.aspx.designer.cs">
+      <DependentUpon>DepartmentAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentEdit.aspx.cs">
+      <DependentUpon>DepartmentEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentEdit.aspx.designer.cs">
+      <DependentUpon>DepartmentEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentList.aspx.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\DepartmentList.aspx.designer.cs">
+      <DependentUpon>DepartmentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoAdd.aspx.cs">
+      <DependentUpon>UserInfoAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoAdd.aspx.designer.cs">
+      <DependentUpon>UserInfoAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoEdit.aspx.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoEdit.aspx.designer.cs">
+      <DependentUpon>UserInfoEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoList.aspx.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\SysManager\UserInfoList.aspx.designer.cs">
+      <DependentUpon>UserInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programs\Tool\VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Programs\Tool\VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\RockFrameWork\Code\RockFramework\RockFramework.csproj">
+      <Project>{8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA}</Project>
+      <Name>RockFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{4ED36E6E-55F6-455F-B384-43FDB69B4D36}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dao\Dao.csproj">
+      <Project>{55F3AEFD-D611-4474-B12F-98CC49B5E65A}</Project>
+      <Name>Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{A6324CD6-B429-4C4E-A69F-CCAA254DEB58}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\CommonLogging211\Common.Logging.Log4Net1211\Common.Logging.Log4Net1211.2010-net40.csproj">
+      <Project>{2756B5D0-B576-417F-A107-1695DF76D34A}</Project>
+      <Name>Common.Logging.Log4Net1211.2010-net40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\CommonLogging211\Common.Logging\Common.Logging.2010-net40.csproj">
+      <Project>{440D903A-D409-48FC-A6C4-3EE69CCD663B}</Project>
+      <Name>Common.Logging.2010-net40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\log4net1211\log4net.vs2010.csproj">
+      <Project>{181FE707-E161-4722-9F38-6AAAB6FAA106}</Project>
+      <Name>log4net.vs2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\NHibernate331\Iesi.Collections\Iesi.Collections.csproj">
+      <Project>{4C251E3E-6EA1-4A51-BBCB-F9C42AE55344}</Project>
+      <Name>Iesi.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Aop\Spring.Aop.2010.csproj">
+      <Project>{3A3A4E65-45A6-4B20-B460-0BEDC302C02C}</Project>
+      <Name>Spring.Aop.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Core\Spring.Core.2010.csproj">
+      <Project>{710961A3-0DF4-49E4-A26E-F5B9C044AC84}</Project>
+      <Name>Spring.Core.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Data.NHibernate33\Spring.Data.NHibernate33.2010.csproj">
+      <Project>{D546EFB7-9F6C-4C11-B2F8-B85FAD135399}</Project>
+      <Name>Spring.Data.NHibernate33.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Data\Spring.Data.2010.csproj">
+      <Project>{AE00E5AB-C39A-436F-86D2-33BFE33E2E40}</Project>
+      <Name>Spring.Data.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Web.Extensions\Spring.Web.Extensions.2010.csproj">
+      <Project>{E5E287D2-EE2C-4C99-87CA-EB27B35ABF7B}</Project>
+      <Name>Spring.Web.Extensions.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\SpringNet20M1\Spring.Web\Spring.Web.2010.csproj">
+      <Project>{BA4789EB-281A-48EA-8763-28B9F0596A18}</Project>
+      <Name>Spring.Web.2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="js\SysManager\" />
+    <Folder Include="themes\azure\images\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\.svn\props\" />
+    <Folder Include="themes\azure\images\.svn\text-base\" />
+    <Folder Include="themes\azure\images\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\accordion\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\accordion\.svn\props\" />
+    <Folder Include="themes\azure\images\accordion\.svn\text-base\" />
+    <Folder Include="themes\azure\images\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\accordion\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\accordion\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\alert\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\alert\.svn\props\" />
+    <Folder Include="themes\azure\images\alert\.svn\text-base\" />
+    <Folder Include="themes\azure\images\alert\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\alert\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\alert\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\button\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\button\.svn\props\" />
+    <Folder Include="themes\azure\images\button\.svn\text-base\" />
+    <Folder Include="themes\azure\images\button\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\button\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\button\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\dialog\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\dialog\.svn\props\" />
+    <Folder Include="themes\azure\images\dialog\.svn\text-base\" />
+    <Folder Include="themes\azure\images\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\dialog\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\dialog\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\form\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\form\.svn\props\" />
+    <Folder Include="themes\azure\images\form\.svn\text-base\" />
+    <Folder Include="themes\azure\images\form\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\form\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\form\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\grid\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\grid\.svn\props\" />
+    <Folder Include="themes\azure\images\grid\.svn\text-base\" />
+    <Folder Include="themes\azure\images\grid\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\grid\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\grid\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\layout\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\layout\.svn\props\" />
+    <Folder Include="themes\azure\images\layout\.svn\text-base\" />
+    <Folder Include="themes\azure\images\layout\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\layout\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\layout\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\menu\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\menu\.svn\props\" />
+    <Folder Include="themes\azure\images\menu\.svn\text-base\" />
+    <Folder Include="themes\azure\images\menu\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\menu\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\menu\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\panel\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\panel\.svn\props\" />
+    <Folder Include="themes\azure\images\panel\.svn\text-base\" />
+    <Folder Include="themes\azure\images\panel\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\panel\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\panel\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\props\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\text-base\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\progressBar\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\shadow\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\shadow\.svn\props\" />
+    <Folder Include="themes\azure\images\shadow\.svn\text-base\" />
+    <Folder Include="themes\azure\images\shadow\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\shadow\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\shadow\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\tabs\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\tabs\.svn\props\" />
+    <Folder Include="themes\azure\images\tabs\.svn\text-base\" />
+    <Folder Include="themes\azure\images\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\tabs\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\tabs\.svn\tmp\text-base\" />
+    <Folder Include="themes\azure\images\tree\.svn\prop-base\" />
+    <Folder Include="themes\azure\images\tree\.svn\props\" />
+    <Folder Include="themes\azure\images\tree\.svn\text-base\" />
+    <Folder Include="themes\azure\images\tree\.svn\tmp\prop-base\" />
+    <Folder Include="themes\azure\images\tree\.svn\tmp\props\" />
+    <Folder Include="themes\azure\images\tree\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\.svn\prop-base\" />
+    <Folder Include="themes\default\images\.svn\props\" />
+    <Folder Include="themes\default\images\.svn\text-base\" />
+    <Folder Include="themes\default\images\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\accordion\.svn\prop-base\" />
+    <Folder Include="themes\default\images\accordion\.svn\props\" />
+    <Folder Include="themes\default\images\accordion\.svn\text-base\" />
+    <Folder Include="themes\default\images\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\accordion\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\accordion\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\alert\.svn\prop-base\" />
+    <Folder Include="themes\default\images\alert\.svn\props\" />
+    <Folder Include="themes\default\images\alert\.svn\text-base\" />
+    <Folder Include="themes\default\images\alert\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\alert\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\alert\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\button\.svn\prop-base\" />
+    <Folder Include="themes\default\images\button\.svn\props\" />
+    <Folder Include="themes\default\images\button\.svn\text-base\" />
+    <Folder Include="themes\default\images\button\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\button\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\button\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\dialog\.svn\prop-base\" />
+    <Folder Include="themes\default\images\dialog\.svn\props\" />
+    <Folder Include="themes\default\images\dialog\.svn\text-base\" />
+    <Folder Include="themes\default\images\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\dialog\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\dialog\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\form\.svn\prop-base\" />
+    <Folder Include="themes\default\images\form\.svn\props\" />
+    <Folder Include="themes\default\images\form\.svn\text-base\" />
+    <Folder Include="themes\default\images\form\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\form\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\form\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\grid\.svn\prop-base\" />
+    <Folder Include="themes\default\images\grid\.svn\props\" />
+    <Folder Include="themes\default\images\grid\.svn\text-base\" />
+    <Folder Include="themes\default\images\grid\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\grid\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\grid\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\layout\.svn\prop-base\" />
+    <Folder Include="themes\default\images\layout\.svn\props\" />
+    <Folder Include="themes\default\images\layout\.svn\text-base\" />
+    <Folder Include="themes\default\images\layout\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\layout\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\layout\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\menu\.svn\prop-base\" />
+    <Folder Include="themes\default\images\menu\.svn\props\" />
+    <Folder Include="themes\default\images\menu\.svn\text-base\" />
+    <Folder Include="themes\default\images\menu\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\menu\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\menu\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\panel\.svn\prop-base\" />
+    <Folder Include="themes\default\images\panel\.svn\props\" />
+    <Folder Include="themes\default\images\panel\.svn\text-base\" />
+    <Folder Include="themes\default\images\panel\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\panel\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\panel\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\progressBar\.svn\prop-base\" />
+    <Folder Include="themes\default\images\progressBar\.svn\props\" />
+    <Folder Include="themes\default\images\progressBar\.svn\text-base\" />
+    <Folder Include="themes\default\images\progressBar\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\progressBar\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\progressBar\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\shadow\.svn\prop-base\" />
+    <Folder Include="themes\default\images\shadow\.svn\props\" />
+    <Folder Include="themes\default\images\shadow\.svn\text-base\" />
+    <Folder Include="themes\default\images\shadow\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\shadow\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\shadow\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\tabs\.svn\prop-base\" />
+    <Folder Include="themes\default\images\tabs\.svn\props\" />
+    <Folder Include="themes\default\images\tabs\.svn\text-base\" />
+    <Folder Include="themes\default\images\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\tabs\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\tabs\.svn\tmp\text-base\" />
+    <Folder Include="themes\default\images\tree\.svn\prop-base\" />
+    <Folder Include="themes\default\images\tree\.svn\props\" />
+    <Folder Include="themes\default\images\tree\.svn\text-base\" />
+    <Folder Include="themes\default\images\tree\.svn\tmp\prop-base\" />
+    <Folder Include="themes\default\images\tree\.svn\tmp\props\" />
+    <Folder Include="themes\default\images\tree\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\.svn\prop-base\" />
+    <Folder Include="themes\green\images\.svn\props\" />
+    <Folder Include="themes\green\images\.svn\text-base\" />
+    <Folder Include="themes\green\images\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\accordion\.svn\prop-base\" />
+    <Folder Include="themes\green\images\accordion\.svn\props\" />
+    <Folder Include="themes\green\images\accordion\.svn\text-base\" />
+    <Folder Include="themes\green\images\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\accordion\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\accordion\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\alert\.svn\prop-base\" />
+    <Folder Include="themes\green\images\alert\.svn\props\" />
+    <Folder Include="themes\green\images\alert\.svn\text-base\" />
+    <Folder Include="themes\green\images\alert\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\alert\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\alert\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\button\.svn\prop-base\" />
+    <Folder Include="themes\green\images\button\.svn\props\" />
+    <Folder Include="themes\green\images\button\.svn\text-base\" />
+    <Folder Include="themes\green\images\button\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\button\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\button\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\dialog\.svn\prop-base\" />
+    <Folder Include="themes\green\images\dialog\.svn\props\" />
+    <Folder Include="themes\green\images\dialog\.svn\text-base\" />
+    <Folder Include="themes\green\images\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\dialog\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\dialog\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\form\.svn\prop-base\" />
+    <Folder Include="themes\green\images\form\.svn\props\" />
+    <Folder Include="themes\green\images\form\.svn\text-base\" />
+    <Folder Include="themes\green\images\form\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\form\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\form\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\grid\.svn\prop-base\" />
+    <Folder Include="themes\green\images\grid\.svn\props\" />
+    <Folder Include="themes\green\images\grid\.svn\text-base\" />
+    <Folder Include="themes\green\images\grid\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\grid\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\grid\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\layout\.svn\prop-base\" />
+    <Folder Include="themes\green\images\layout\.svn\props\" />
+    <Folder Include="themes\green\images\layout\.svn\text-base\" />
+    <Folder Include="themes\green\images\layout\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\layout\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\layout\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\panel\.svn\prop-base\" />
+    <Folder Include="themes\green\images\panel\.svn\props\" />
+    <Folder Include="themes\green\images\panel\.svn\text-base\" />
+    <Folder Include="themes\green\images\panel\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\panel\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\panel\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\tabs\.svn\prop-base\" />
+    <Folder Include="themes\green\images\tabs\.svn\props\" />
+    <Folder Include="themes\green\images\tabs\.svn\text-base\" />
+    <Folder Include="themes\green\images\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\tabs\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\tabs\.svn\tmp\text-base\" />
+    <Folder Include="themes\green\images\tree\.svn\prop-base\" />
+    <Folder Include="themes\green\images\tree\.svn\props\" />
+    <Folder Include="themes\green\images\tree\.svn\text-base\" />
+    <Folder Include="themes\green\images\tree\.svn\tmp\prop-base\" />
+    <Folder Include="themes\green\images\tree\.svn\tmp\props\" />
+    <Folder Include="themes\green\images\tree\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\.svn\props\" />
+    <Folder Include="themes\purple\images\.svn\text-base\" />
+    <Folder Include="themes\purple\images\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\accordion\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\accordion\.svn\props\" />
+    <Folder Include="themes\purple\images\accordion\.svn\text-base\" />
+    <Folder Include="themes\purple\images\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\accordion\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\accordion\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\alert\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\alert\.svn\props\" />
+    <Folder Include="themes\purple\images\alert\.svn\text-base\" />
+    <Folder Include="themes\purple\images\alert\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\alert\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\alert\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\button\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\button\.svn\props\" />
+    <Folder Include="themes\purple\images\button\.svn\text-base\" />
+    <Folder Include="themes\purple\images\button\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\button\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\button\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\dialog\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\dialog\.svn\props\" />
+    <Folder Include="themes\purple\images\dialog\.svn\text-base\" />
+    <Folder Include="themes\purple\images\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\dialog\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\dialog\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\form\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\form\.svn\props\" />
+    <Folder Include="themes\purple\images\form\.svn\text-base\" />
+    <Folder Include="themes\purple\images\form\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\form\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\form\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\grid\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\grid\.svn\props\" />
+    <Folder Include="themes\purple\images\grid\.svn\text-base\" />
+    <Folder Include="themes\purple\images\grid\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\grid\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\grid\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\layout\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\layout\.svn\props\" />
+    <Folder Include="themes\purple\images\layout\.svn\text-base\" />
+    <Folder Include="themes\purple\images\layout\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\layout\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\layout\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\menu\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\menu\.svn\props\" />
+    <Folder Include="themes\purple\images\menu\.svn\text-base\" />
+    <Folder Include="themes\purple\images\menu\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\menu\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\menu\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\panel\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\panel\.svn\props\" />
+    <Folder Include="themes\purple\images\panel\.svn\text-base\" />
+    <Folder Include="themes\purple\images\panel\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\panel\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\panel\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\props\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\text-base\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\progressBar\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\shadow\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\shadow\.svn\props\" />
+    <Folder Include="themes\purple\images\shadow\.svn\text-base\" />
+    <Folder Include="themes\purple\images\shadow\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\shadow\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\shadow\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\tabs\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\tabs\.svn\props\" />
+    <Folder Include="themes\purple\images\tabs\.svn\text-base\" />
+    <Folder Include="themes\purple\images\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\tabs\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\tabs\.svn\tmp\text-base\" />
+    <Folder Include="themes\purple\images\tree\.svn\prop-base\" />
+    <Folder Include="themes\purple\images\tree\.svn\props\" />
+    <Folder Include="themes\purple\images\tree\.svn\text-base\" />
+    <Folder Include="themes\purple\images\tree\.svn\tmp\prop-base\" />
+    <Folder Include="themes\purple\images\tree\.svn\tmp\props\" />
+    <Folder Include="themes\purple\images\tree\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\.svn\props\" />
+    <Folder Include="themes\silver\images\.svn\text-base\" />
+    <Folder Include="themes\silver\images\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\accordion\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\accordion\.svn\props\" />
+    <Folder Include="themes\silver\images\accordion\.svn\text-base\" />
+    <Folder Include="themes\silver\images\accordion\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\accordion\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\accordion\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\alert\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\alert\.svn\props\" />
+    <Folder Include="themes\silver\images\alert\.svn\text-base\" />
+    <Folder Include="themes\silver\images\alert\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\alert\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\alert\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\button\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\button\.svn\props\" />
+    <Folder Include="themes\silver\images\button\.svn\text-base\" />
+    <Folder Include="themes\silver\images\button\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\button\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\button\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\dialog\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\dialog\.svn\props\" />
+    <Folder Include="themes\silver\images\dialog\.svn\text-base\" />
+    <Folder Include="themes\silver\images\dialog\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\dialog\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\dialog\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\form\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\form\.svn\props\" />
+    <Folder Include="themes\silver\images\form\.svn\text-base\" />
+    <Folder Include="themes\silver\images\form\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\form\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\form\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\grid\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\grid\.svn\props\" />
+    <Folder Include="themes\silver\images\grid\.svn\text-base\" />
+    <Folder Include="themes\silver\images\grid\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\grid\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\grid\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\layout\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\layout\.svn\props\" />
+    <Folder Include="themes\silver\images\layout\.svn\text-base\" />
+    <Folder Include="themes\silver\images\layout\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\layout\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\layout\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\menu\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\menu\.svn\props\" />
+    <Folder Include="themes\silver\images\menu\.svn\text-base\" />
+    <Folder Include="themes\silver\images\menu\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\menu\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\menu\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\panel\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\panel\.svn\props\" />
+    <Folder Include="themes\silver\images\panel\.svn\text-base\" />
+    <Folder Include="themes\silver\images\panel\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\panel\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\panel\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\props\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\text-base\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\progressBar\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\shadow\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\shadow\.svn\props\" />
+    <Folder Include="themes\silver\images\shadow\.svn\text-base\" />
+    <Folder Include="themes\silver\images\shadow\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\shadow\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\shadow\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\tabs\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\tabs\.svn\props\" />
+    <Folder Include="themes\silver\images\tabs\.svn\text-base\" />
+    <Folder Include="themes\silver\images\tabs\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\tabs\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\tabs\.svn\tmp\text-base\" />
+    <Folder Include="themes\silver\images\tree\.svn\prop-base\" />
+    <Folder Include="themes\silver\images\tree\.svn\props\" />
+    <Folder Include="themes\silver\images\tree\.svn\text-base\" />
+    <Folder Include="themes\silver\images\tree\.svn\tmp\prop-base\" />
+    <Folder Include="themes\silver\images\tree\.svn\tmp\props\" />
+    <Folder Include="themes\silver\images\tree\.svn\tmp\text-base\" />
+    <Folder Include="UpLoad\IntegralFiles\" />
+    <Folder Include="UpLoad\MateriallFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax\SysManager\CompanyService.ashx" />
+    <Content Include="Ajax\SysManager\DepartmentService.ashx" />
+    <Content Include="Ajax\SysManager\UserInfoService.ashx" />
+    <None Include="js\dwz\jquery.validate1.9.js.bak" />
+    <None Include="themes\azure\images\grid\Thumbs.db" />
+    <None Include="themes\azure\images\layout\Thumbs.db" />
+    <None Include="themes\azure\images\menu\Thumbs.db" />
+    <None Include="themes\azure\images\progressBar\Thumbs.db" />
+    <None Include="themes\azure\images\shadow\Thumbs.db" />
+    <None Include="themes\azure\images\tabs\Thumbs.db" />
+    <None Include="themes\azure\images\tree\Thumbs.db" />
+    <None Include="themes\default\images\panel\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46002</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

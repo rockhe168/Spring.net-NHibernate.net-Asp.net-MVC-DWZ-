@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="Dao.DataObjectManagerFactory" type="Dao.DataObjectManagerFactory,Dao" singleton="true">
+
+    <property name="DepartmentDao" ref="Dao.SysManager.DepartmentDao" />
+    <property name="UserInfoDao" ref="Dao.SysManager.UserInfoDao" />
+    <property name="CompanyDao" ref="Dao.SysManager.CompanyDao" />
+    <!--{Tag}-->
+
+
+
+
+  </object>
+
+</objects>
+
+
+
+
+
+
+
+
+
+

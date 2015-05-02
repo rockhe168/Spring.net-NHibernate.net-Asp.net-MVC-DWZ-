@@ -1,0 +1,20 @@
+<Modules>
+  <Module PersistentId="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA" ModuleId="RockFramework" />
+  <Module PersistentId="55F3AEFD-D611-4474-B12F-98CC49B5E65A" ModuleId="Dao" />
+  <Module PersistentId="710961A3-0DF4-49E4-A26E-F5B9C044AC84" ModuleId="Spring.Core.2010" />
+  <Module PersistentId="440D903A-D409-48FC-A6C4-3EE69CCD663B" ModuleId="Common.Logging.2010-net40" />
+  <Module PersistentId="3A3A4E65-45A6-4B20-B460-0BEDC302C02C" ModuleId="Spring.Aop.2010" />
+  <Module PersistentId="D546EFB7-9F6C-4C11-B2F8-B85FAD135399" ModuleId="Spring.Data.NHibernate33.2010" />
+  <Module PersistentId="AE00E5AB-C39A-436F-86D2-33BFE33E2E40" ModuleId="Spring.Data.2010" />
+  <Module PersistentId="BA4789EB-281A-48EA-8763-28B9F0596A18" ModuleId="Spring.Web.2010" />
+  <Module PersistentId="5909BFE7-93CF-4E5F-BE22-6293368AF01D" ModuleId="NHibernate" />
+  <Module PersistentId="3873FAED-EEA5-4519-B615-7E3D306D4EF7" ModuleId="Domain" />
+  <Module PersistentId="4C251E3E-6EA1-4A51-BBCB-F9C42AE55344" ModuleId="Iesi.Collections" />
+  <Module PersistentId="4ED36E6E-55F6-455F-B384-43FDB69B4D36" ModuleId="BLL" />
+  <Module PersistentId="2756B5D0-B576-417F-A107-1695DF76D34A" ModuleId="Common.Logging.Log4Net1211.2010-net40" />
+  <Module PersistentId="181FE707-E161-4722-9F38-6AAAB6FAA106" ModuleId="log4net.vs2010" />
+  <Module PersistentId="83C9A38E-AF0A-403C-9973-A5FC72B4D99C" ModuleId="MvcWeb" />
+  <Module PersistentId="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A" ModuleId="Web" />
+  <Module PersistentId="CB351EB2-049D-40BE-BB09-1CE4ED68FE67" ModuleId="Spring.Web.Mvc4.2010" />
+  <Module PersistentId="A9AE40FF-1A21-414A-9FE7-3BE13644CC6D" ModuleId="Newtonsoft.Json" />
+</Modules>

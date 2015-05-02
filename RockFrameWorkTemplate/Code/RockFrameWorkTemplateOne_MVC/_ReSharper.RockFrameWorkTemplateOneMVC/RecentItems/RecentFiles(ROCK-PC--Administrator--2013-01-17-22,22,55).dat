@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:View/d:WebForm/f:ClientDWZBasePager.cs" caret="0" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:View/d:WebForm/f:BasePager.cs" caret="0" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:RockAdoTemplate.cs" caret="0" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:IRepository.cs" caret="0" fromTop="0" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:DWZ/d:Constant/f:ResponseStatus.cs" caret="233" fromTop="12" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Programs/d:SysManager/f:CompanyAdd.aspx" caret="231" fromTop="5" />
+    <File id="AE00E5AB-C39A-436F-86D2-33BFE33E2E40/d:Transaction/d:Interceptor/f:TransactionInterceptor.cs" caret="3051" fromTop="22" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:DWZ/f:HtmlHelper.cs" caret="9921" fromTop="15" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:View/d:WebForm/f:Pagination.cs" caret="360" fromTop="17" />
+    <File id="CB351EB2-049D-40BE-BB09-1CE4ED68FE67/f:SpringMvcApplication.cs" caret="6749" fromTop="45" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Programs/d:SysManager/f:CompanyList.aspx.cs" caret="2647" fromTop="30" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:Repository/f:NHibernateRepository.cs" caret="11030" fromTop="18" />
+    <File id="3873FAED-EEA5-4519-B615-7E3D306D4EF7/d:Mappings/d:SysManager/f:Company.hbm.xml" caret="463" fromTop="7" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Programs/d:SysManager/f:CompanyList.aspx" caret="671" fromTop="11" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Programs/d:SysManager/f:CompanyEdit.aspx" caret="1570" fromTop="23" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:View/d:Mvc/f:DWZBaseController.cs" caret="5600" fromTop="27" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/f:Web.config" caret="3931" fromTop="16" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Scripts/f:dwzCommon.js" caret="2076" fromTop="10" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Programs/d:SysManager/f:UserInfoList.aspx" caret="2519" fromTop="32" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Index.cshtml" caret="1703" fromTop="14" />
+    <File id="5909BFE7-93CF-4E5F-BE22-6293368AF01D/d:Hql/d:Ast/d:ANTLR/f:CaseInsensitiveStringStream.cs" caret="571" fromTop="15" />
+    <File id="5909BFE7-93CF-4E5F-BE22-6293368AF01D/d:Hql/d:Ast/d:ANTLR/d:Generated/f:HqlLexer.cs" caret="91422" fromTop="22" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Ajax/d:SysManager/f:UserInfoService.ashx.cs" caret="2874" fromTop="23" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Create.cshtml" caret="107" fromTop="6" />
+    <File id="B1A71D6C-2A5D-4576-B384-9C24F5C50B3A/d:Ajax/d:SysManager/f:CompanyService.ashx.cs" caret="3943" fromTop="102" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:App_Start/f:RouteConfig.cs" caret="455" fromTop="19" />
+    <File id="8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA/d:View/d:Mvc/f:BaseController.cs" caret="907" fromTop="17" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:UserInfoController.cs" caret="0" fromTop="0" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="2070" fromTop="20" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="735" fromTop="7" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="1344" fromTop="39" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="87" fromTop="3" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="308" fromTop="8" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="715" fromTop="18" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="3224" fromTop="21" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="3422" fromTop="28" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="3846" fromTop="19" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4755" fromTop="25" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4755" fromTop="25" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4755" fromTop="28" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4053" fromTop="33" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4192" fromTop="25" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="6485" fromTop="25" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="6485" fromTop="27" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="6428" fromTop="26" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Index.cshtml" caret="3389" fromTop="28" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="5949" fromTop="30" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="5631" fromTop="27" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Index.cshtml" caret="1745" fromTop="17" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="5703" fromTop="20" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/f:Web.config" caret="8162" fromTop="30" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/f:Web.config" caret="8936" fromTop="33" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/f:Web.config" caret="4214" fromTop="24" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Scripts/f:dwzCommon.js" caret="2714" fromTop="28" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4968" fromTop="17" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="4837" fromTop="11" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="1972" fromTop="25" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Controllers/d:SysManager/f:CompanyController.cs" caret="1663" fromTop="20" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="508" fromTop="14" />
+    <File id="83C9A38E-AF0A-403C-9973-A5FC72B4D99C/d:Views/d:SysManager/d:Company/f:Edit.cshtml" caret="41" fromTop="0" />
+  </RecentEdits>
+</RecentFiles>

@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net20\Common.Logging\Release\Common.Logging.dll
+C:\_prj\common-logging\build\net20\Common.Logging\Release\Common.Logging.pdb
+C:\_prj\common-logging\build\net20\Common.Logging\Release\Common.Logging.xml
+C:\_prj\common-logging\src\Common.Logging\obj\Release\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging\obj\Release\Common.Logging.dll
+C:\_prj\common-logging\src\Common.Logging\obj\Release\Common.Logging.pdb

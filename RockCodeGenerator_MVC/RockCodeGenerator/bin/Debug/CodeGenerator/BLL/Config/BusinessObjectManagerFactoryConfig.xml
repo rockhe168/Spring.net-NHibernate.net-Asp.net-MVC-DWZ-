@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <!--BusinessObjectManagerFactory Ioc Config-->
+  <object id="BLL.BusinessObjectManagerFactory" type="BLL.BusinessObjectManagerFactory,BLL" singleton="true">
+      <property name="UserInfoManager" ref="BLL.SysManager.UserInfoManager" />   <property name="CompanyManager" ref="BLL.SysManager.CompanyManager" />   <property name="DepartmentManager" ref="BLL.SysManager.DepartmentManager" /> <!--{Tag}-->
+
+
+
+  </object>
+</objects>
+
+
+
+
+
+
+
+
+
+
+
+
+

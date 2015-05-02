@@ -1,0 +1,12 @@
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.xml
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.2010.csprojResolveAssemblyReference.cache
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Data\Debug\Spring.Data.xml
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\obj\Debug\Spring.Data.pdb

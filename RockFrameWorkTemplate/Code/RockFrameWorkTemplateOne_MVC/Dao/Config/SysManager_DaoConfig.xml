@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  
+<!--Company-->
+<object id="Dao.SysManager.CompanyDao" type="Dao.NHibernateImpl.SysManager.CompanyDao,Dao">
+  <property name="HibernateTemplate" ref="HibernateTemplate" />
+</object>
+
+<!--Department-->
+<object id="Dao.SysManager.DepartmentDao" type="Dao.NHibernateImpl.SysManager.DepartmentDao,Dao">
+  <property name="HibernateTemplate" ref="HibernateTemplate" />
+</object>
+
+<!--UserInfo-->
+<object id="Dao.SysManager.UserInfoDao" type="Dao.NHibernateImpl.SysManager.UserInfoDao,Dao">
+  <property name="HibernateTemplate" ref="HibernateTemplate" />
+</object>
+
+<!--{ProPertyXMLList}-->
+
+
+  
+
+</objects>
+

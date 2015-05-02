@@ -1,0 +1,8 @@
+C:\_prj\common-logging\build\net40\Common.Logging.NLog20\Debug\Common.Logging.NLog20.dll
+C:\_prj\common-logging\build\net40\Common.Logging.NLog20\Debug\Common.Logging.NLog20.pdb
+C:\_prj\common-logging\build\net40\Common.Logging.NLog20\Debug\Common.Logging.NLog20.xml
+C:\_prj\common-logging\src\Common.Logging.NLog20\obj\Debug\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.NLog20\obj\Debug\Common.Logging.NLog20.dll
+C:\_prj\common-logging\src\Common.Logging.NLog20\obj\Debug\Common.Logging.NLog20.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging.NLog20\obj\Debug\Common.Logging.NLog20.2010-net40.csprojResolveAssemblyReference.cache
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging.NLog20\obj\Debug\Common.Logging.NLog20.pdb

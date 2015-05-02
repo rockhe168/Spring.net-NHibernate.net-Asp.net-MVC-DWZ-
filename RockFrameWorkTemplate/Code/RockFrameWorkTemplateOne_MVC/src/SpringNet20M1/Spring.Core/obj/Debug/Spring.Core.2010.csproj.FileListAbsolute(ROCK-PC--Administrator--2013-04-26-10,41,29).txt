@@ -1,0 +1,17 @@
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.pdb
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.xml
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.2010.csprojResolveAssemblyReference.cache
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Resources.Strings.resources
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.2010.csproj.GenerateResource.Cache
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.dll
+F:\My\百度网盘\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.pdb
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\build\VS.Net.2010\Spring.Core\Debug\Spring.Core.xml
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Resources.Strings.resources
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\GenerateResource.read.1.tlog
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\GenerateResource.write.1.tlog
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.dll
+E:\MyRepository\百度云\ProjectCode\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\obj\Debug\Spring.Core.pdb

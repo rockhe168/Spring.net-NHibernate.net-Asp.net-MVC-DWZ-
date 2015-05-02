@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--查询Department 总条数-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>Department_SelectTotalCount</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[select count(a.DepartmentId) from Department as a @where]]>
+    </Text>
+  </sql>
+
+  <!--查询Department 制定页数数据-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>Department_SelectGoToPager</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+         select top @pageSize * from
+        (select row_number() over(order by @orderbyStr) as rownumber,
+        a.DepartmentId,
+a.Name,
+a.Code,
+a.Description,
+a.Company
+        from Department as a @where ) as temp_table
+        where  rownumber between @pageSize*(@currentPageNo-1)+1 and @pageSize*(@currentPageNo)
+      ]]>
+    </Text>
+  </sql>
+
+  <!--查询Department 导出对应Excel-->
+  <sql>
+    <Id>UserInfo_SelectGoToOutPutExcel</Id>
+    <Text>
+      <![CDATA[
+      select
+      a.DepartmentId as ,
+a.Name as ,
+a.Code as ,
+a.Description as ,
+a.Company as 
+      from Department as a @where
+      ]]>
+    </Text>
+  </sql>
+</configuration>
+

@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Company Index";
+}
+@model IEnumerable<Domain.Entities.SysManager.Company>
+
+<form id="pagerForm" method="post" action="@Url.Action("Index")">
+<input type="hidden" name="pageNum" value="1" />
+<input type="hidden" name="numPerPage" value="@ViewBag.PageSize" />
+<input type="hidden" name="orderField" value="@ViewBag.OrderbyStr" />
+<input type="hidden" name="orderDirection" value="@ViewBag.OrderByDirection" />
+</form>
+<div class="pageHeader">
+    <form onsubmit="return navTabSearch(this);" action="@Url.Action("Index")"
+    method="post">
+    <div class="searchBar">
+        <table class="searchContent">
+            <tr>
+                <td>
+                    机构名称<input type="text" name="Name" value="@ViewBag.Name" />
+                </td>
+                <td>
+                    描述<input type="text" name="Description" value="@ViewBag.Description" />
+                </td>
+            </tr>
+        </table>
+        <div class="subBar">
+            <ul>
+                <li>
+                    <div class="buttonActive">
+                        <div class="buttonContent">
+                            <button type="submit">
+                                检索</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </form>
+</div>
+<div class="pageContent">
+    <div class="panelBar">
+        <ul class="toolBar">
+            <li><a class="add" href="#" onclick="$.RockDwz.OpenDialogWindow('@Url.Action("Create")','CompanyCreate','新增')">
+                <span>添加</span></a></li>
+            <li><a class="delete" href="#" onclick="$.RockDwz.OpenAlertWindowTodoDeleteToOptions('@Url.Action("DeleteOptions")','CompanyId','确认要删除此记录吗！')">
+                <span>删除</span></a></li>
+        </ul>
+    </div>
+    <table class="list" width="100%" layouth="120">
+        <thead>
+            <tr>
+                <th style="width:15px;">
+                    <input type="checkbox" group="CompanyId" class="checkboxCtrl"/>
+                </th>
+                <th>
+                    机构名称
+                </th>
+                <th>
+                    描述
+                </th>
+                <th style="width: 28px;">
+                    修改
+                </th>
+                <th style="width: 28px;">
+                    删除
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+               @foreach(var item in Model)
+               {
+                <tr>
+                    <td style="width: 4%;">
+                       <input type="checkbox"  name="CompanyId" value='@item.Id' />
+                    </td>
+                    <td>
+                       @item.Name
+                    </td>
+                    <td>
+                       @item.Description
+                    </td>
+                    <td>
+                        <label>
+                            <a title="修改" href="#" class="btnEdit" onclick="$.RockDwz.OpenDialogWindow('@Url.Action("Edit",new{CompanyId=item.Id})','CompanyEdit','修改')">
+                            </a>
+                        </label>
+                    </td>
+                     <td>
+                        <label>
+                            <a title="删除" href="#" class="btnDel" onclick="$.RockDwz.OpenAlertWindowTodoDeleteByPK('@Url.Action("Delete",new{CompanyId=item.Id})','确定要删除此条数据吗？')">
+                            </a>
+                        </label>
+                    </td>
+                </tr>
+              }
+        </tbody>
+    </table>
+    @Html.Raw(ViewBag.Pagination) 
+</div>

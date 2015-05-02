@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Domain" namespace="Domain.Entities.SysManager">
+  <class name="Domain.Entities.SysManager.Company, Domain" table="Company">
+    <id name="Id" column="CompanyId" type="string" length="36">
+      <generator class="assigned" />
+    </id>
+    <property name="Name" column="Name" type="string" length="100" not-null="true" />
+    <property name="Description" column="Description" type="string" length="100"  />
+
+    <!--一对多关系映射，Company 1:N Department   inverse=true 子实体负责关联关系-->
+    <set name="Departments" table="Department" inverse="true" generic="true">
+      <key column="Company"  foreign-key="FK_Department_Company"></key>
+      <one-to-many class="Domain.Entities.SysManager.Department,Domain"/>
+    </set>
+
+    <!--公共部分-->
+    <property name="CreateTime" column="CreateTime" type="datetime" not-null="true" />
+    <property name="UpdateTime" column="UpdateTime" type="datetime" not-null="true" />
+    <property name="CreateUser" column="CreateUser" type="string" length="36" not-null="true" />
+    <property name="UpdateUser" column="UpdateUser" type="string" length="36"/>
+    <property name="IsDelete" column="IsDelete" type="bool" not-null="true"/>
+    <property name="Version" column="Version" type="integer" not-null="true"/>
+  </class>
+</hibernate-mapping>
+

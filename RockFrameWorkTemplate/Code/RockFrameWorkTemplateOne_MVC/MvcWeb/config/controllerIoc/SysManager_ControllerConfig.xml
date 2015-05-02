@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+
+  <!--Index-->
+  <!--object type="MvcWeb.Controllers.HomeController, MvcWeb" singleton="true" >
+    <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>-->
+  
+  <!--Company-->
+  <object type="MvcWeb.Controllers.SysManager.CompanyController, MvcWeb" singleton="false" >
+    <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+  
+</objects>
+

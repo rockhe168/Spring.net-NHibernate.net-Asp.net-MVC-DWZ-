@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  
+<!--Company  Start-->
+<object id="CompanyList" type="~/Programs/SysManager/CompanyList.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="CompanyEdit" type="~/Programs/SysManager/CompanyEdit.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="CompanyAdd" type="~/Programs/SysManager/CompanyAdd.aspx">
+   <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<!--Company  End-->
+
+<!--Department  Start-->
+<object id="DepartmentList" type="~/Programs/SysManager/DepartmentList.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="DepartmentEdit" type="~/Programs/SysManager/DepartmentEdit.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="DepartmentAdd" type="~/Programs/SysManager/DepartmentAdd.aspx">
+   <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<!--Department  End-->
+
+<!--UserInfo  Start-->
+<object id="UserInfoList" type="~/Programs/SysManager/UserInfoList.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="UserInfoEdit" type="~/Programs/SysManager/UserInfoEdit.aspx">
+<property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<object id="UserInfoAdd" type="~/Programs/SysManager/UserInfoAdd.aspx">
+   <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+<!--UserInfo  End-->
+
+
+  
+
+</objects>
+

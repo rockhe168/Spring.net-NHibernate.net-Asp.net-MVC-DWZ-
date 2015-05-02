@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net20\Common.Logging.NLog10\Release\Common.Logging.NLog10.dll
+C:\_prj\common-logging\build\net20\Common.Logging.NLog10\Release\Common.Logging.NLog10.pdb
+C:\_prj\common-logging\build\net20\Common.Logging.NLog10\Release\Common.Logging.NLog10.xml
+C:\_prj\common-logging\src\Common.Logging.NLog10\obj\Release\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.NLog10\obj\Release\Common.Logging.NLog10.dll
+C:\_prj\common-logging\src\Common.Logging.NLog10\obj\Release\Common.Logging.NLog10.pdb

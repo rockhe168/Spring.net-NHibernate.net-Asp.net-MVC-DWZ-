@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <!--Company-->
+  <object id="CompanyService" name="~/Ajax/SysManager/CompanyService.ashx">
+    <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+
+  <!--Department-->
+  <object id="DepartmentService" name="~/Ajax/SysManager/DepartmentService.ashx">
+    <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+
+
+  <!--UserInfo-->
+  <object id="UserInfoService" name="~/Ajax/SysManager/UserInfoService.ashx">
+    <property name="BllObjectFactory" ref="BLL.BusinessObjectManagerFactory" />
+  </object>
+
+
+</objects>
+

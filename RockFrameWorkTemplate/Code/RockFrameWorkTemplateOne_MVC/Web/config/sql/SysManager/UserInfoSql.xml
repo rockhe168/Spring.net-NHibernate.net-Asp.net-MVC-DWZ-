@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--查询UserInfo 总条数-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>UserInfo_SelectTotalCount</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[select count(a.UserID) from UserInfo as a @where]]>
+    </Text>
+  </sql>
+
+  <!--查询UserInfo 制定页数数据-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>UserInfo_SelectGoToPager</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+         select top @pageSize * from
+        (select row_number() over(order by @orderbyStr) as rownumber,
+        a. UserID,
+        a.UserName,
+        dpt.Name as DepartmentName,
+        com.Name as CompanyName,
+        a.UserPassword,
+        a.UseActurlName,
+        a.RolID,
+        a.CompanyId,
+        a.DepartmentId,
+        a.UserTel,
+        a.UserMobile,
+        a.UserEmail
+        from UserInfo as a
+        left join Department as dpt on a. DepartmentId=dpt.DepartmentId
+        left join Company as com on a.CompanyId=com.CompanyId @where ) as temp_table
+        where  rownumber between @pageSize*(@currentPageNo-1)+1 and @pageSize*(@currentPageNo)
+      ]]>
+    </Text>
+  </sql>
+
+  <!--查询UserInfo 导出对应Excel-->
+  <sql>
+    <Id>UserInfo_SelectGoToOutPutExcel</Id>
+    <Text>
+      <![CDATA[
+      select
+      a.UserID as 用户ID,
+      a.UserName as 登录名,
+      a.UserPassword as 登录密码,
+      a.UseActurlName as 真实姓名,
+      a.RolID as 所属角色,
+      a.CompanyId as 所在公司,
+      a.DepartmentId as 所在部门,
+      a.UserTel as 用户电话,
+      a.UserMobile as 手机,
+      a.UserEmail as 邮件
+      from UserInfo as a @where
+      ]]>
+    </Text>
+  </sql>
+</configuration>

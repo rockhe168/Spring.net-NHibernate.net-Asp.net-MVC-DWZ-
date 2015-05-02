@@ -1,0 +1,6 @@
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net1210\Debug\Common.Logging.Log4Net1210.dll
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net1210\Debug\Common.Logging.Log4Net1210.pdb
+C:\_prj\common-logging\build\net40\Common.Logging.Log4Net1210\Debug\Common.Logging.Log4Net1210.xml
+C:\_prj\common-logging\src\Common.Logging.Log4Net1210\obj\Debug\ResolveAssemblyReference.cache
+C:\_prj\common-logging\src\Common.Logging.Log4Net1210\obj\Debug\Common.Logging.Log4Net1210.dll
+C:\_prj\common-logging\src\Common.Logging.Log4Net1210\obj\Debug\Common.Logging.Log4Net1210.pdb

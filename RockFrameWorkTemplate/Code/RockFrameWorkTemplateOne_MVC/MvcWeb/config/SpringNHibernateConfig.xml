@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 注意objects节点需要引用命名空间xmlns:d="http://www.springframework.net/database" -->
+<objects xmlns="http://www.springframework.net"
+         xmlns:db="http://www.springframework.net/database">
+  <!--spring集合nHibernate
+    NH1：定义数据库链接对象dbProvider（数据提供者）
+    注意：这里的db:为命名空间前缀，与objects里的xmlns:db这里的db对应。
+
+  <db:dbProvider id="DbProvider"
+                   provider="SqlServer-2.0"
+                   connectionString="Data Source=.\SQLExpress;Integrated Security=true;User Instance=true;AttachDBFilename=|DataDirectory|\Northwnd.mdf"/>-->
+  <!--<object id="DbProvider" type="Spring.Data.Common.DbProviderFactoryObject,Spring.Data">
+    <property name="Provider" value="SqlServer-2.0"/>
+    <property name="ConnectionString" value="Server=.;database=rock_SpringAndNHibernate;user id=sa;password=sa"/>
+  </object>-->
+  <!-- 配置占位符 -->
+  <object type="Spring.Objects.Factory.Config.PropertyPlaceholderConfigurer, Spring.Core">
+    <property name="ConfigSections" value="databaseSettings"/>
+  </object>
+  <!--数据库提供者-->
+  <db:provider id="DbProvider" provider="${provider}"
+               connectionString="${connectionString}"/>
+  <!-- 
+        Provider名称和对应的数据库如下所示。
+        SqlServer-1.1：Microsoft SQL Server，provider V1.0.5000.0，用于.NET框架V1.1。
+        SqlServer-2.0（System.Data.SqlClient的别名）：Microsoft SQL Server，provider V2.0.0.0，用于.NET框架V2.0。
+        OleDb-1.1：OleDb，provider V1.0.5000.0，用于.NET框架V1.1。
+        OleDb-2.0（System.Data.OleDb的别名）：OleDb，provider V2.0.0.0，用于.NET框架V2.0。
+        OracleClient-2.0（System.Data.OracleClient的别名）：Oracle，Microsoft provider V2.0.0.0。
+        OracleODP-2.0（System.DataAccess.Client的别名）：Oracle, Oracle provider V2.102.2.20。
+        MySql：MySQL, MySQL provider 1.0.7.3007（按：Spring.NET的当前版本（1.1 Preview3）需要MySqlConnector 1.0.7.30072，您可以从MySql的网站上单独下载，当然您也可以修改Spring.Data以使用1.08 RC或5.02beta版。）
+  -->
+  <!-- NH2：SessionFactory配置中，指明需要环境映射的程序集名称，
+    通俗说法是：哪些层会在集成环境中，被直接引用？
+  -->
+  <object id="NHibernateSessionFactory"
+          type="Spring.Data.NHibernate.LocalSessionFactoryObject, Spring.Data.NHibernate33">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="MappingAssemblies">
+      <list>
+        <value>Domain</value>
+      </list>
+    </property>
+    <property name="HibernateProperties">
+      <dictionary>
+        <entry key="hibernate.current_session_context_class"
+               value="Spring.Data.NHibernate.SpringSessionContext, Spring.Data.NHibernate33"/>
+
+        <entry key="hibernate.connection.provider"
+               value="NHibernate.Connection.DriverConnectionProvider"/>
+        <!--数据库方言-->
+        <entry key="dialect" value="${dialect}"/>
+
+        <!--数据库驱动-->
+        <entry key="connection.driver_class" value="${driver_class}"/>
+
+        <entry key="use_outer_join" value="true"/>
+        <!--是否显示sql-->
+        <entry key="show_sql" value="true"/>
+        <!--是否格式化sql-->
+        <entry key="format_sql" value="true"/>
+        <!--自动建表(反向映射)-->
+        <entry key="hbm2ddl.auto" value="${hbm2ddl.auto}"/>
+        <!--超时时间-->
+        <entry key="command_timeout" value="60"/>
+        <entry key="query.substitutions" value="true 1, false 0, yes 'Y', no 'N'"/>
+      </dictionary>
+    </property>
+    <property name="ExposeTransactionAwareSessionFactory" value="true" />
+  </object>
+  <!-- NH5：nHibernate的模板
+    既nHibernate项目已经为开发者写好了一套通用的方法，
+    能便捷的操作数据库，此处将SessionFactory植入引用即能让它工作起来。  
+  -->
+  <object id="HibernateTemplate" type="Spring.Data.NHibernate.Generic.HibernateTemplate">
+    <property name="SessionFactory" ref="NHibernateSessionFactory" />
+    <property name="TemplateFlushMode" value="Auto" />
+    <property name="CacheQueries" value="true" />
+  </object>
+  <!--ADO.NET Config       AdoTemplate-->
+  <object id="AdoTemplate" type="RockFramework.Repository.RockAdoTemplate,RockFramework">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="DataReaderWrapperType" value="Spring.Data.Support.NullMappingDataReader, Spring.Data"/>
+  </object>
+  <!--<object id="AdoTemplate" type="Spring.Data.Core.AdoTemplate, Spring.Data">
+    <property name="DbProvider" ref="DbProvider"/>
+    <property name="DataReaderWrapperType" value="Spring.Data.Support.NullMappingDataReader, Spring.Data"/>
+  </object>-->
+</objects>

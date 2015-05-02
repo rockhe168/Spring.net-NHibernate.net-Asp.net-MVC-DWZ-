@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <!--查询Company 总条数-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>Company_SelectTotalCount</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[select count(a.CompanyId) from Company as a @where]]>
+    </Text>
+  </sql>
+
+  <!--查询Company 制定页数数据-->
+  <sql>
+    <!--Sql KeyName-->
+    <Id>Company_SelectGoToPager</Id>
+    <!-- Sql Text-->
+    <Text>
+      <![CDATA[
+         select top @pageSize * from
+        (select row_number() over(order by @orderbyStr) as rownumber,
+        a.CompanyId,
+a.Name,
+a.Description
+        from Company as a @where ) as temp_table
+        where  rownumber between @pageSize*(@currentPageNo-1)+1 and @pageSize*(@currentPageNo)
+      ]]>
+    </Text>
+  </sql>
+
+  <!--查询Company 导出对应Excel-->
+  <sql>
+    <Id>UserInfo_SelectGoToOutPutExcel</Id>
+    <Text>
+      <![CDATA[
+      select
+      a.CompanyId as ,
+a.Name as ,
+a.Description as 
+      from Company as a @where
+      ]]>
+    </Text>
+  </sql>
+</configuration>
+

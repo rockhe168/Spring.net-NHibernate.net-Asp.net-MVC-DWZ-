@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C45AD19-B2FF-4FB4-9C4B-9B80E16BBBCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RockFramework</RootNamespace>
+    <AssemblyName>RockFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\ICacheStorage.cs" />
+    <Compile Include="Cache\Impl\DefaultCacheAdapter.cs" />
+    <Compile Include="Cache\Impl\MemcachedCache.cs" />
+    <Compile Include="DomainModel\BaseObject.cs" />
+    <Compile Include="DomainModel\Entity.cs" />
+    <Compile Include="DomainModel\FunLimitEntity.cs" />
+    <Compile Include="DWZ\Constant\CallbackType.cs" />
+    <Compile Include="DWZ\Constant\FunType.cs" />
+    <Compile Include="DWZ\Constant\ResponseStatus.cs" />
+    <Compile Include="DWZ\Constant\SysPageList.cs" />
+    <Compile Include="DWZ\HtmlHelper.cs" />
+    <Compile Include="DWZ\OutputHtmlAttributeStringHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\BaseBusinessRepositoryImpl.cs" />
+    <Compile Include="Repository\Config\SqlConfigManager.cs" />
+    <Compile Include="Repository\Data\DataType.cs" />
+    <Compile Include="Repository\Data\Direction.cs" />
+    <Compile Include="Repository\Data\ExpressionType.cs" />
+    <Compile Include="Repository\Data\HqlParameter.cs" />
+    <Compile Include="Repository\IBusinessRepository.cs" />
+    <Compile Include="Repository\IObjectManagerFactory.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\NHibernateRepository.cs" />
+    <Compile Include="Repository\RockAdoTemplate.cs" />
+    <Compile Include="SystemConstant.cs" />
+    <Compile Include="Tool\FileHelper\DirFileOperate.cs" />
+    <Compile Include="Tool\FileHelper\FileOperate.cs" />
+    <Compile Include="Tool\FileHelper\XmlOperate.cs" />
+    <Compile Include="Tool\JsonHelper\AjaxResult.cs" />
+    <Compile Include="Tool\JsonHelper\FormatToJson.cs" />
+    <Compile Include="Tool\JsonHelper\JsonHelper.cs" />
+    <Compile Include="Tool\RegexHelper.cs" />
+    <Compile Include="Tool\StringHelper.cs" />
+    <Compile Include="Tool\Common.cs" />
+    <Compile Include="Tool\TypeHelper.cs" />
+    <Compile Include="View\Mvc\BaseController.cs" />
+    <Compile Include="View\Mvc\DWZBaseController.cs" />
+    <Compile Include="View\WebForm\BasePager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm\ClientDWZBasePager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm\DWZBasePager.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm\Pagination.cs" />
+    <Compile Include="Web\BaseHttpHandler.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\CommonLogging211\Common.Logging\Common.Logging.2010-net40.csproj">
+      <Project>{440D903A-D409-48FC-A6C4-3EE69CCD663B}</Project>
+      <Name>Common.Logging.2010-net40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\Iesi.Collections\Iesi.Collections.csproj">
+      <Project>{4C251E3E-6EA1-4A51-BBCB-F9C42AE55344}</Project>
+      <Name>Iesi.Collections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\NHibernate331\NHibernate\NHibernate.csproj">
+      <Project>{5909BFE7-93CF-4E5F-BE22-6293368AF01D}</Project>
+      <Name>NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Aop\Spring.Aop.2010.csproj">
+      <Project>{3A3A4E65-45A6-4B20-B460-0BEDC302C02C}</Project>
+      <Name>Spring.Aop.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Core\Spring.Core.2010.csproj">
+      <Project>{710961A3-0DF4-49E4-A26E-F5B9C044AC84}</Project>
+      <Name>Spring.Core.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data.NHibernate33\Spring.Data.NHibernate33.2010.csproj">
+      <Project>{D546EFB7-9F6C-4C11-B2F8-B85FAD135399}</Project>
+      <Name>Spring.Data.NHibernate33.2010</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RockFrameWorkTemplate\Code\RockFrameWorkTemplateOne_MVC\src\SpringNet20M1\Spring.Data\Spring.Data.2010.csproj">
+      <Project>{AE00E5AB-C39A-436F-86D2-33BFE33E2E40}</Project>
+      <Name>Spring.Data.2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
