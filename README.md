@@ -1,4 +1,4 @@
-# Spring.net-NHibernate.net-Asp.net-MVC-DWZ-
+# Spring.net+NHibernate.net or Asp.netMVC + DWZ
 基于Spring.net + NHiberNate +Asp.net MVC or Asp.net +DWZ 构建的一套后台管理系统框架
 
 
@@ -17,7 +17,8 @@
 
 
 -----------------------改动------------------------------------------------------>
-2012-8-30
+
+时间：2012-8-30
    
    在Bll层，Dao层加入工厂模式，让所有对象利用工厂统一管理
    
